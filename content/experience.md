@@ -1,33 +1,29 @@
 ---
-title: 'Experience'
-date: 2023-10-24
+title: CV
+date: 2026-05-28
 type: landing
 
 design:
   spacing: '5rem'
 
-# Note: `username` refers to the user's folder name in `content/authors/`
-
-# Page sections
 sections:
+  - block: markdown
+    content:
+      title: Profile
+      text: |-
+        Robot learning and AI researcher with expertise in reinforcement learning, robotic manipulation, foundation models, LLM/VLM agents, RL post-training, and robotics-oriented simulation. My work studies learning-based decision-making systems from both capability and reliability perspectives, with an emphasis on long-horizon behavior, embodied interaction, and trustworthy agent evaluation.
+
+        Lab affiliation details, supervisor, PhD dates, and the downloadable CV PDF should be verified before publication.
+    design:
+      columns: '1'
   - block: resume-experience
     content:
       username: me
     design:
-      # Hugo date format
       date_format: 'January 2006'
-      # Education or Experience section first?
       is_education_first: false
   - block: resume-skills
     content:
-      title: Skills & Hobbies
-      username: me
-  - block: resume-awards
-    content:
-      title: Awards
-      username: me
-  - block: resume-languages
-    content:
-      title: Languages
+      title: Technical Capabilities
       username: me
 ---
