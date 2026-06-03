@@ -24,8 +24,8 @@ sections:
       name:
         size: md
       avatar:
-        size: medium
-        shape: circle
+        size: large
+        shape: rounded
 
   - block: markdown
     id: themes
