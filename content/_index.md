@@ -10,13 +10,9 @@ sections:
     content:
       username: me
       text: >-
-        I am a PhD researcher in robot learning and AI. My work studies
-        reinforcement learning for embodied and agentic decision-making systems,
-        with a focus on robotic manipulation, long-horizon tasks, reliable
-        LLM/VLM agents, and interpretable behavior.
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
+        I am a PhD researcher in robot learning and AI. My work focuses on
+        reinforcement learning for robotic manipulation and on interpretability
+        methods that make RL agents easier to analyze, explain, and trust.
       headings:
         about: ''
         education: ''
@@ -37,24 +33,20 @@ sections:
       title: Research Themes
       subtitle: ''
       text: |-
-        My research studies how reinforcement learning can produce capable, reliable, and interpretable decision-making agents. I work across robot learning, long-horizon manipulation, LLM/VLM agents, and RL-based post-training, with a particular interest in when task success does or does not imply reliable reasoning or behavior.
+        My research centers on two anchors: RL-driven robot learning and interpretability for RL agents. I study how learned agents acquire useful behavior in robotic tasks, and how their decisions can be analyzed beyond aggregate reward.
 
-        <div class="grid gap-6 md:grid-cols-2 not-prose">
+        <div class="grid gap-6 md:grid-cols-3 not-prose">
           <div class="rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-            <h3 class="mt-0 text-lg font-semibold">Robot Learning & Manipulation</h3>
-            <p>I study reinforcement learning methods for robotic manipulation and embodied control, with an emphasis on long-horizon tasks, obstacle-aware behavior, and sample-efficient learning.</p>
+            <h3 class="mt-0 text-lg font-semibold">RL-Driven Robot Learning</h3>
+            <p>I study reinforcement learning for robotic manipulation and embodied control, with an emphasis on reward design, obstacle-aware behavior, and learning from interaction.</p>
           </div>
           <div class="rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-            <h3 class="mt-0 text-lg font-semibold">Reinforcement Learning for Long-Horizon Decision Making</h3>
-            <p>I am interested in agents that must plan, act, and adapt over multiple turns or subgoals, including task decomposition, reward design, and evaluation of multi-turn behavior.</p>
+            <h3 class="mt-0 text-lg font-semibold">Interpretable RL Agents</h3>
+            <p>I develop methods and evaluations for understanding why RL agents act, including reward decomposition, causal state distillation, action coherence, and trajectory-level explanations.</p>
           </div>
           <div class="rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-            <h3 class="mt-0 text-lg font-semibold">Reliable LLM/VLM Agents</h3>
-            <p>I investigate how RL-based post-training changes the behavior of language and vision-language agents, especially whether task success is accompanied by reliable reasoning traces.</p>
-          </div>
-          <div class="rounded-lg border border-gray-200 dark:border-gray-700 p-6">
-            <h3 class="mt-0 text-lg font-semibold">Explainability & Interpretability</h3>
-            <p>I develop analyses and evaluation protocols for understanding learned agents, including reasoning trace reliability, action coherence, grounding, temporal consistency, and mechanistic diagnostics.</p>
+            <h3 class="mt-0 text-lg font-semibold">Foundation Models for RL Explanations</h3>
+            <p>I use language and vision-language models as tools for querying, summarizing, and stress testing explanations, while keeping the learned RL policy as the central object of study.</p>
           </div>
         </div>
     design:
@@ -64,7 +56,7 @@ sections:
     id: projects
     content:
       title: Selected Projects
-      text: Representative project areas connecting robotics/RL with interpretable and reliable agent behavior.
+      text: Three project threads that summarize my research trajectory.
       filters:
         folders:
           - projects
@@ -81,7 +73,7 @@ sections:
     id: papers
     content:
       title: Featured Publications
-      text: Selected work most closely aligned with RL-driven robot learning and interpretability for RL agents.
+      text: Selected first-author work most closely aligned with RL-driven robot learning and interpretability for RL agents.
       filters:
         folders:
           - publications
@@ -95,7 +87,7 @@ sections:
     content:
       title: Research Vision
       text: |-
-        My long-term goal is to develop learning-based robotic and agentic systems that are not only successful in task execution, but also robust, inspectable, and trustworthy. I am especially interested in connecting reinforcement learning, foundation models, and embodied interaction, where agents must act over long horizons while maintaining reliable internal and external behavior.
+        My long-term goal is to develop RL-driven robotic systems whose behavior can be improved, inspected, and explained. I am especially interested in the connection between reinforcement learning, embodied interaction, and interpretability: agents should not only complete tasks, but also expose reliable evidence about why they act.
     design:
       columns: '1'
 
@@ -124,13 +116,9 @@ sections:
     content:
       title: Experience / CV
       text: |-
-        **Current:** PhD Researcher, University of Hamburg. Lab affiliation details should be finalized before publishing this staging site.
+        **Current:** PhD Researcher, University of Hamburg.
 
-        **Education:** PhD Researcher in robot learning, reinforcement learning, and explainable AI at the University of Hamburg.
-
-        **Research areas:** reinforcement learning, robot learning, robotic manipulation, LLM/VLM agents, RL post-training, and interpretability.
-
-        Note: the downloadable CV file exists in this staging repo and should be verified before publication.
+        **Research areas:** reinforcement learning, robot learning, robotic manipulation, and interpretability for RL agents.
     design:
       columns: '1'
 
@@ -139,13 +127,11 @@ sections:
     content:
       title: Technical Capabilities
       text: |-
-        **Reinforcement Learning:** PPO, reward shaping, reward decomposition, long-horizon decision making, trajectory-level evaluation.
+        **Reinforcement Learning:** PPO, reward shaping, reward decomposition, trajectory-level evaluation.
 
-        **Robot Learning:** robotic manipulation, simulation-based learning, obstacle-aware behavior, task decomposition, embodied control.
+        **Robot Learning:** robotic manipulation, simulation-based learning, obstacle-aware behavior, embodied control.
 
-        **Foundation Models:** LLM/VLM agents, reasoning traces, RL-based post-training, LLM-as-judge evaluation, multimodal agent evaluation.
-
-        **Engineering Tools:** PyTorch, robotics simulation, experiment analysis. Additional infrastructure tools should be added only after verification.
+        **Interpretability:** causal state distillation, high-level robotic explanations, mental modeling of RL agents, action coherence analysis.
     design:
       columns: '1'
 
@@ -154,7 +140,7 @@ sections:
     content:
       title: Contact
       text: |-
-        I am open to research discussions and collaborations related to robot learning, reinforcement learning, reliable LLM/VLM agents, and embodied AI.
+        I am open to research discussions and collaborations related to robot learning, reinforcement learning, and interpretable RL-agent behavior.
 
         Email: [wenhao.lu@uni-hamburg.de](mailto:wenhao.lu@uni-hamburg.de)
     design:

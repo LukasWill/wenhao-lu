@@ -11,9 +11,7 @@ sections:
     content:
       title: Profile
       text: |-
-        Robot learning and AI researcher with expertise in reinforcement learning, robotic manipulation, foundation models, LLM/VLM agents, RL post-training, and robotics-oriented simulation. My work studies learning-based decision-making systems from both capability and reliability perspectives, with an emphasis on long-horizon behavior, embodied interaction, and trustworthy agent evaluation.
-
-        Lab affiliation details, supervisor, PhD dates, and the downloadable CV PDF should be verified before publication.
+        Robot learning and AI researcher focused on reinforcement learning for robotic manipulation and interpretability for RL agents. My work studies how learned policies can be trained, evaluated, and explained in embodied decision-making tasks.
     design:
       columns: '1'
   - block: resume-experience

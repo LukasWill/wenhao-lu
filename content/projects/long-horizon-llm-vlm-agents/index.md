@@ -8,7 +8,11 @@ tags:
   - VLM agents
   - evaluation
   - reasoning traces
-featured: true
+featured: false
+draft: true
+build:
+  render: never
+  list: never
 links: []
 image:
   caption: "TODO: add representative evaluation image."

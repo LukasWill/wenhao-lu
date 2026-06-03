@@ -11,12 +11,11 @@ name:
 postnominals: []
 status:
   icon: ""
-role: PhD Researcher in Robot Learning, Reinforcement Learning, and Reliable LLM/VLM Agents
+role: PhD Researcher in Robot Learning and Interpretable Reinforcement Learning
 bio: |
-  I am a PhD researcher in robot learning and AI. My work studies
-  reinforcement learning for embodied and agentic decision-making systems, with
-  a focus on robotic manipulation, long-horizon tasks, reliable LLM/VLM agents,
-  and interpretable behavior.
+  I am a PhD researcher in robot learning and AI. My work focuses on
+  reinforcement learning for robotic manipulation and on interpretability methods
+  that make RL agents easier to analyze, explain, and trust.
 
 affiliations:
   - name: University of Hamburg
@@ -29,15 +28,12 @@ links:
   - icon: brands/github
     url: https://github.com/LukasWill
     label: GitHub
-  - icon: hero/document-text
-    url: /uploads/resume.pdf
-    label: CV
 
 interests:
   - Reinforcement learning for robotic manipulation
   - Robot learning and embodied control
-  - Reliable LLM/VLM agents
   - Interpretability and explainability for RL agents
+  - Language models for RL-agent explanations
 
 education:
   - degree: PhD Researcher
@@ -46,7 +42,7 @@ education:
     end: ''
     summary: |
       Research focus: robot learning, reinforcement learning, robotic manipulation,
-      reliable LLM/VLM agents, and interpretable RL-agent behavior.
+      and interpretable RL-agent behavior.
       Program dates, lab name, and supervisor details should be finalized before publication.
 
 experience:
@@ -56,9 +52,8 @@ experience:
     end: ''
     summary: |
       Research on reinforcement learning for embodied and agentic decision-making
-      systems, with emphasis on robot learning, robotic manipulation, long-horizon
-      behavior, and interpretable or reliable agent behavior.
-      Lab affiliation details should be finalized before publishing this staging site.
+      systems, with emphasis on robot learning, robotic manipulation, and
+      interpretable RL-agent behavior.
 
 skills:
   - name: Reinforcement Learning
@@ -81,11 +76,9 @@ skills:
         level: 4
       - label: Embodied control
         level: 4
-  - name: Foundation Models & Interpretability
+  - name: Interpretability
     items:
-      - label: LLM/VLM agents
-        level: 3
-      - label: Reasoning traces
+      - label: Language models for RL explanations
         level: 3
       - label: Mental modeling of RL agents
         level: 4

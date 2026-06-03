@@ -8,7 +8,11 @@ tags:
   - obstacle avoidance
   - GPDF
   - robot learning
-featured: true
+featured: false
+draft: true
+build:
+  render: never
+  list: never
 links: []
 image:
   caption: "TODO: add representative GPDF project image."
@@ -16,7 +20,7 @@ image:
   preview_only: true
 ---
 
-Reward shaping and observation design using Gaussian Process Distance Fields for obstacle-aware manipulation, separating distance-based shaping from gradient-informed shaping and fixed-size GPDF observations.
+Reward shaping and observation design using Gaussian Process Distance Fields for obstacle-aware manipulation.
 
 ## Motivation
 

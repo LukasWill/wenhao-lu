@@ -31,3 +31,18 @@ featured: true
 This publication contributes to the interpretability anchor of the site: analyzing learned reinforcement learning agents with causal representation objectives and local explanation methods.
 
 Links: [arXiv](https://arxiv.org/abs/2401.00104), [Proceedings](https://proceedings.mlr.press/v236/lu24a.html).
+
+## BibTeX
+
+```bibtex
+@inproceedings{Lu24CausalState,
+  title = {Causal State Distillation for Explainable Reinforcement Learning},
+  author = {Lu, Wenhao and Zhao, Xufeng and Fryen, Thilo and Lee, Jae Hee and Li, Mengdi and Magg, Sven and Wermter, Stefan},
+  booktitle = {3rd Conference on Causal Learning and Reasoning},
+  year = {2024},
+  month = apr,
+  arxiv = {2401.00104},
+  url = {https://proceedings.mlr.press/v236/lu24a.html},
+  note = {Oral presentation}
+}
+```

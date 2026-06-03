@@ -1,12 +1,11 @@
 ---
-title: RL for Robotic Manipulation
+title: RL-Driven Robotic Manipulation
 date: 2026-05-28
-summary: Learning-based approaches for robotic manipulation, with a focus on reinforcement learning, long-horizon interaction, and robust behavior in simulated or embodied settings.
+summary: Reinforcement learning for robotic manipulation, including reward design, obstacle-aware behavior, and simulation-based evaluation.
 tags:
   - robot learning
   - reinforcement learning
   - manipulation
-  - long-horizon tasks
 featured: true
 links: []
 image:
@@ -15,7 +14,7 @@ image:
   preview_only: true
 ---
 
-Learning-based approaches for robotic manipulation, with a focus on reinforcement learning, long-horizon interaction, and robust behavior in simulated or embodied settings.
+This project area studies reinforcement learning methods for embodied control and robotic manipulation, with an emphasis on reward design, obstacle-aware behavior, and evaluation of learned policies in simulated or embodied settings.
 
 ## Motivation
 
@@ -23,17 +22,10 @@ Robotic manipulation requires agents to make sequential decisions under physical
 
 ## What I Worked On
 
-- Reinforcement learning methods for robotic manipulation and embodied control.
-- Reward design and trajectory-level evaluation for long-horizon behavior.
-- Simulation-based studies of robust behavior in obstacle-aware or changing environments.
+- Reward design for robot learning.
+- Obstacle-aware manipulation, including Gaussian Process Distance Field representations.
+- Simulation-based evaluation for embodied decision making.
 
-## Representative Outputs
+## Related Work
 
-- TODO: add official paper, project page, code, or demo links when public.
-- TODO: add representative project image.
-
-## Links
-
-- TODO: add paper link.
-- TODO: add code link if public.
-- TODO: add demo link if available.
+- A Closer Look at Reward Decomposition for High-Level Robotic Explanations, ICDL 2023.

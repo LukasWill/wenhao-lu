@@ -12,77 +12,66 @@ Framework-neutral source content for this HugoBlox staging site and a possible f
 
 ## Short Bio
 
-I am a PhD researcher in robot learning and AI. My work studies reinforcement learning for embodied and agentic decision-making systems, with a focus on robotic manipulation, long-horizon tasks, reliable LLM/VLM agents, and interpretable behavior.
+I am a PhD researcher in robot learning and AI. My work focuses on reinforcement learning for robotic manipulation and on interpretability methods that make RL agents easier to analyze, explain, and trust.
 
 ## Research Anchors
 
-- RL-driven robot learning, including foundation models.
-- Interpretability and explainability for RL agents, including foundation models.
+- RL-driven robot learning.
+- Interpretability and explainability for RL agents.
 
 ## Research Themes
 
-### Robot Learning & Manipulation
+### RL-Driven Robot Learning
 
-I study reinforcement learning methods for robotic manipulation and embodied control, with an emphasis on long-horizon tasks, obstacle-aware behavior, and sample-efficient learning.
+I study reinforcement learning methods for robotic manipulation and embodied control, with an emphasis on reward design, obstacle-aware behavior, and learning from interaction.
 
-### Reinforcement Learning for Long-Horizon Decision Making
+### Interpretable RL Agents
 
-I am interested in agents that must plan, act, and adapt over multiple turns or subgoals, including task decomposition, reward design, and evaluation of multi-turn behavior.
+I develop methods and evaluations for understanding why RL agents act, including reward decomposition, causal state distillation, action coherence, and trajectory-level explanations.
 
-### Reliable LLM/VLM Agents
+### Foundation Models for RL Explanations
 
-I investigate how RL-based post-training changes the behavior of language and vision-language agents, especially whether task success is accompanied by reliable reasoning traces.
-
-### Explainability & Interpretability
-
-I develop analyses and evaluation protocols for understanding learned agents, including reasoning trace reliability, action coherence, grounding, temporal consistency, and mechanistic diagnostics.
+I use language and vision-language models as tools for querying, summarizing, and stress testing explanations of RL agents, while keeping the learned RL policy and its behavior as the central object of study.
 
 ## Selected Projects
 
-### RL for Robotic Manipulation
+### RL-Driven Robotic Manipulation
 
-Learning-based approaches for robotic manipulation, with a focus on reinforcement learning, long-horizon interaction, and robust behavior in simulated or embodied settings.
+Reinforcement learning for robotic manipulation, including reward design, obstacle-aware behavior, and simulation-based evaluation.
 
-Tags: robot learning, reinforcement learning, manipulation, long-horizon tasks.
+Tags: robot learning, reinforcement learning, manipulation.
 
-### Obstacle-Aware Reward Shaping with GPDFs
+### Reward Decomposition for Robotic Explanations
 
-Reward shaping and observation design using Gaussian Process Distance Fields for obstacle-aware manipulation, separating distance-based shaping from gradient-informed shaping and fixed-size GPDF observations.
+High-level explanations for RL-driven robot behavior using reward decomposition and abstract action spaces.
 
-Tags: reward shaping, manipulation, obstacle avoidance, GPDF, robot learning.
+Tags: explainable RL, reward decomposition, robotics.
 
-### Reasoning Reliability under RL Fine-Tuning
+### Causal and Language-Based RL Interpretability
 
-We study whether RL fine-tuning improves not only task success but also the reliability of visible reasoning traces in multi-turn LLM/VLM agents. The analysis separates aggregate reward-quality co-movement from within-checkpoint trajectory-level coupling.
+Analyses of RL agents using causal state distillation and language-model mental modeling to inspect learned behavior from trajectories.
 
-Tags: RLFT, RLVR, LLM agents, VLM agents, reasoning reliability, interpretability.
-
-### LLM/VLM Agents for Long-Horizon Decision Making
-
-Evaluation and analysis of multi-turn language and vision-language agents in long-horizon environments, focusing on planning, action coherence, temporal consistency, grounding, and reward-reliability decoupling.
-
-Tags: long-horizon agents, LLM agents, VLM agents, evaluation, reasoning traces.
+Tags: RL interpretability, causal analysis, mental modeling.
 
 ## Featured Publications
 
 - A Closer Look at Reward Decomposition for High-Level Robotic Explanations, ICDL 2023.
 - Causal State Distillation for Explainable Reinforcement Learning, CLeaR 2024.
 - Mental Modeling of Reinforcement Learning Agents by Language Models, TMLR 2025.
-- Curriculum-RLAIF: Curriculum Alignment with Reinforcement Learning from AI Feedback, ACL Findings 2026.
 
 ## Research Vision
 
-My long-term goal is to develop learning-based robotic and agentic systems that are not only successful in task execution, but also robust, inspectable, and trustworthy. I am especially interested in connecting reinforcement learning, foundation models, and embodied interaction, where agents must act over long horizons while maintaining reliable internal and external behavior.
+My long-term goal is to develop RL-driven robotic systems whose behavior can be improved, inspected, and explained. I am especially interested in the connection between reinforcement learning, embodied interaction, and interpretability: agents should not only complete tasks, but also expose reliable evidence about why they act.
 
 ## Technical Capability Groups
 
-Reinforcement Learning: PPO, reward shaping, reward decomposition, long-horizon decision making, trajectory-level evaluation.
+Reinforcement Learning: PPO, reward shaping, reward decomposition, trajectory-level evaluation.
 
-Robot Learning: robotic manipulation, simulation-based learning, obstacle-aware behavior, task decomposition, embodied control.
+Robot Learning: robotic manipulation, simulation-based learning, obstacle-aware behavior, embodied control.
 
-Foundation Models: LLM/VLM agents, reasoning traces, RL-based post-training, LLM-as-judge evaluation, multimodal agent evaluation.
+Interpretability: causal state distillation, high-level robotic explanations, mental modeling of RL agents, action coherence analysis.
 
-Engineering Tools: PyTorch, robotics simulation, experiment analysis. TODO: verify Transformers, vLLM, Ray, WandB, Hydra, SLURM/HPC, and AI2-THOR before listing them as published CV claims.
+Engineering Tools: PyTorch, robotics simulation, experiment analysis.
 
 ## News Items
 
@@ -95,9 +84,5 @@ Engineering Tools: PyTorch, robotics simulation, experiment analysis. TODO: veri
 
 - TODO: verify current lab name and affiliation wording.
 - TODO: verify PhD program, supervisor, and dates.
-- TODO: verify M.Sc. Informatics at Karlsruhe Institute of Technology and B.Sc. Mechatronics before publishing them in HugoBlox.
-- TODO: verify that `static/uploads/resume.pdf` is the current CV.
 - TODO: add Google Scholar, LinkedIn, and ORCID URLs if public.
-- TODO: add official paper title/status for the reasoning reliability under RL fine-tuning work.
-- TODO: add arXiv/code/demo links only when public.
 - TODO: add representative project images.

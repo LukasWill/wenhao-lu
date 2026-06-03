@@ -21,9 +21,22 @@ tags:
   - reinforcement learning
   - AI feedback
   - foundation models
-featured: true
+featured: false
 ---
 
 This entry is converted from the existing al-folio bibliography. Add the official abstract and any project or code links after verifying public metadata.
 
 Links: [arXiv](https://arxiv.org/abs/2505.20075).
+
+## BibTeX
+
+```bibtex
+@misc{Lin26CurriculumRLAIF,
+  title = {Curriculum-RLAIF: Curriculum Alignment with Reinforcement Learning from AI Feedback},
+  author = {Lin, Jiaye and Li, Mengdi and Zhao, Xufeng and Lu, Wenhao and Zhao, Peilin and Wermter, Stefan and Wang, Di},
+  year = {2026},
+  arxiv = {2505.20075},
+  url = {https://arxiv.org/abs/2505.20075},
+  note = {ACL 2026 Findings}
+}
+```

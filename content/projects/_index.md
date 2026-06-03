@@ -7,7 +7,7 @@ sections:
   - block: collection
     content:
       title: Selected Projects
-      text: Representative project areas in robot learning, reinforcement learning, reliable LLM/VLM agents, and interpretable agent behavior.
+      text: Representative project areas in RL-driven robot learning and interpretability for RL agents.
       filters:
         folders:
           - projects

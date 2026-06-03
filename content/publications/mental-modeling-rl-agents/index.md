@@ -26,3 +26,17 @@ featured: true
 This publication connects language models with interpretability for reinforcement learning agents, while keeping learned RL behavior and observed interaction histories as the central object of study.
 
 Links: [arXiv](https://arxiv.org/abs/2406.18505), [OpenReview](https://openreview.net/forum?id=JN7iNWaPTe).
+
+## BibTeX
+
+```bibtex
+@article{Lu25MentalModeling,
+  title = {Mental Modeling of Reinforcement Learning Agents by Language Models},
+  author = {Lu, Wenhao and Zhao, Xufeng and Spisak, Josua and Lee, Jae Hee and Wermter, Stefan},
+  journal = {Transactions on Machine Learning Research},
+  year = {2025},
+  arxiv = {2406.18505},
+  url = {https://openreview.net/forum?id=JN7iNWaPTe},
+  note = {Also presented at the 18th European Workshop on Reinforcement Learning}
+}
+```

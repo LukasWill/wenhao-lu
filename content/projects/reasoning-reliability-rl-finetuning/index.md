@@ -9,7 +9,11 @@ tags:
   - VLM agents
   - reasoning reliability
   - interpretability
-featured: true
+featured: false
+draft: true
+build:
+  render: never
+  list: never
 links: []
 image:
   caption: "TODO: add representative analysis figure."
