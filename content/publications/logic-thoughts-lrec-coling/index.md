@@ -10,15 +10,9 @@ authors:
   - Stefan Wermter
 date: "2024-05-01T00:00:00Z"
 publishDate: "2024-05-01T00:00:00Z"
-publication_types: ["paper-conference"]
 publication:
   name: "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation"
   short_name: "LREC-COLING 2024"
-peer_reviewed: true
-open_access: true
-awards:
-  - name: "Oral presentation"
-    level: selected
 summary: "Logic-enhanced zero-shot chain-of-thought reasoning in large language models."
 tags:
   - language models
@@ -27,7 +21,7 @@ tags:
 featured: false
 ---
 
-This coauthored publication is included in the full publication list. It is not featured on the homepage because the homepage is reserved for the RL-driven robot learning and RL-agent interpretability anchors.
+**TL;DR:** This work proposes Logical Thoughts, a prompting framework that uses symbolic-logic principles to verify and revise zero-shot chain-of-thought reasoning across multi-step tasks.
 
 Links: [ACL Anthology](https://aclanthology.org/2024.lrec-main.543/).
 

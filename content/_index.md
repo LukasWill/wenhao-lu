@@ -53,6 +53,20 @@ sections:
       columns: '1'
 
   - block: collection
+    id: papers
+    content:
+      title: Featured Publications
+      text: Selected papers and coauthored work, ordered newest first.
+      filters:
+        folders:
+          - publications
+      order: desc
+      count: 20
+    design:
+      view: citation
+      columns: 1
+
+  - block: collection
     id: projects
     content:
       title: Selected Projects
@@ -68,19 +82,6 @@ sections:
       show_date: false
       show_read_time: false
       show_read_more: false
-
-  - block: collection
-    id: papers
-    content:
-      title: Featured Publications
-      text: Selected first-author work most closely aligned with RL-driven robot learning and interpretability for RL agents.
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: citation
-      columns: 1
 
   - block: markdown
     id: vision
@@ -112,35 +113,11 @@ sections:
         padding: [0, 0, 0, 0]
 
   - block: markdown
-    id: cv
-    content:
-      title: Experience / CV
-      text: |-
-        **Current:** PhD Researcher, University of Hamburg.
-
-        **Research areas:** reinforcement learning, robot learning, robotic manipulation, and interpretability for RL agents.
-    design:
-      columns: '1'
-
-  - block: markdown
-    id: technical
-    content:
-      title: Technical Capabilities
-      text: |-
-        **Reinforcement Learning:** PPO, reward shaping, reward decomposition, trajectory-level evaluation.
-
-        **Robot Learning:** robotic manipulation, simulation-based learning, obstacle-aware behavior, embodied control.
-
-        **Interpretability:** causal state distillation, high-level robotic explanations, mental modeling of RL agents, action coherence analysis.
-    design:
-      columns: '1'
-
-  - block: markdown
     id: contact
     content:
       title: Contact
       text: |-
-        I am open to research discussions and collaborations related to robot learning, reinforcement learning, and interpretable RL-agent behavior.
+        I am open to research discussions and collaborations on RL-driven robot learning, interpretability for understanding foundation-model behavior, and the synergy between reinforcement learning and foundation models. I am especially interested in RL for robot foundation models in embodied scenarios.
 
         Email: [wenhao.lu@uni-hamburg.de](mailto:wenhao.lu@uni-hamburg.de)
     design:

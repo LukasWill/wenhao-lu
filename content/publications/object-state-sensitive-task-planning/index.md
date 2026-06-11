@@ -9,12 +9,9 @@ authors:
   - Stefan Wermter
 date: "2024-09-01T00:00:00Z"
 publishDate: "2024-09-01T00:00:00Z"
-publication_types: ["paper-conference"]
 publication:
   name: "Artificial Neural Networks and Machine Learning - ICANN 2024"
   short_name: "ICANN 2024"
-peer_reviewed: true
-open_access: true
 summary: "Object state-sensitive neurorobotic task planning."
 tags:
   - robotics
@@ -23,7 +20,7 @@ tags:
 featured: false
 ---
 
-This coauthored publication is included in the full publication list as robotics-adjacent work connected to task planning and embodied AI.
+**TL;DR:** This work studies object state-sensitive robot task planning with LLM/VLM-based agents and introduces a multimodal tabletop benchmark for evaluating state-aware planning.
 
 Links: [DOI](https://doi.org/10.1007/978-3-031-72341-4_18), [arXiv](https://arxiv.org/abs/2406.09988).
 

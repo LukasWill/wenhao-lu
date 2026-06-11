@@ -9,12 +9,9 @@ authors:
   - Stefan Wermter
 date: "2024-11-01T00:00:00Z"
 publishDate: "2024-11-01T00:00:00Z"
-publication_types: ["paper-conference"]
 publication:
   name: "23rd IEEE-RAS International Conference on Humanoid Robots"
   short_name: "Humanoids 2024"
-peer_reviewed: true
-open_access: true
 summary: "Large language models for orchestrating bimanual robots."
 tags:
   - robotics
@@ -23,7 +20,7 @@ tags:
 featured: false
 ---
 
-This coauthored publication is included in the full publication list as robotics and foundation-model work. It is kept off the homepage to avoid diluting the RL-driven robot learning and RL-agent interpretability focus.
+**TL;DR:** This work uses an LLM-based orchestration agent to reason over task configurations and coordinate long-horizon bimanual robot behavior in simulated humanoid manipulation tasks.
 
 Links: [DOI](https://doi.org/10.1109/Humanoids58906.2024.10769891), [arXiv](https://arxiv.org/abs/2404.02018).
 
