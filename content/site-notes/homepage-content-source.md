@@ -12,26 +12,22 @@ Framework-neutral source content for this HugoBlox staging site and a possible f
 
 ## Short Bio
 
-I am a PhD researcher in robot learning and AI. My work focuses on reinforcement learning for robotic manipulation and on interpretability methods that make RL agents easier to analyze, explain, and trust.
+I am a PhD researcher working at the intersection of reinforcement learning, interpretability, and foundation models for robot learning. My research develops and analyzes RL-driven embodied agents, with a focus on robotic manipulation, agent reliability, and explanations that make learned behavior easier to inspect and trust.
 
 ## Research Anchors
 
 - RL-driven robot learning.
 - Interpretability and explainability for RL agents.
 
-## Research Themes
+## Featured Publications
 
-### RL-Driven Robot Learning
-
-I study reinforcement learning methods for robotic manipulation and embodied control, with an emphasis on reward design, obstacle-aware behavior, and learning from interaction.
-
-### Interpretable RL Agents
-
-I develop methods and evaluations for understanding why RL agents act, including reward decomposition, causal state distillation, action coherence, and trajectory-level explanations.
-
-### Foundation Models for RL Explanations
-
-I use language and vision-language models as tools for querying, summarizing, and stress testing explanations of RL agents, while keeping the learned RL policy and its behavior as the central object of study.
+- Curriculum-RLAIF: Curriculum Alignment with Reinforcement Learning from AI Feedback, ACL Findings 2026.
+- Mental Modeling of Reinforcement Learning Agents by Language Models, TMLR 2025.
+- Large Language Models for Orchestrating Bimanual Robots, Humanoids 2024.
+- Details Make a Difference: Object State-Sensitive Neurorobotic Task Planning, ICANN 2024.
+- Enhancing Zero-Shot Chain-of-Thought Reasoning in Large Language Models through Logic, LREC-COLING 2024.
+- Causal State Distillation for Explainable Reinforcement Learning, CLeaR 2024.
+- A Closer Look at Reward Decomposition for High-Level Robotic Explanations, ICDL 2023.
 
 ## Selected Projects
 
@@ -53,16 +49,6 @@ Analyses of RL agents using causal state distillation and language-model mental 
 
 Tags: RL interpretability, causal analysis, mental modeling.
 
-## Featured Publications
-
-- Curriculum-RLAIF: Curriculum Alignment with Reinforcement Learning from AI Feedback, ACL Findings 2026.
-- Mental Modeling of Reinforcement Learning Agents by Language Models, TMLR 2025.
-- Large Language Models for Orchestrating Bimanual Robots, Humanoids 2024.
-- Details Make a Difference: Object State-Sensitive Neurorobotic Task Planning, ICANN 2024.
-- Enhancing Zero-Shot Chain-of-Thought Reasoning in Large Language Models through Logic, LREC-COLING 2024.
-- Causal State Distillation for Explainable Reinforcement Learning, CLeaR 2024.
-- A Closer Look at Reward Decomposition for High-Level Robotic Explanations, ICDL 2023.
-
 ## Research Vision
 
 My long-term goal is to develop RL-driven robotic systems whose behavior can be improved, inspected, and explained. I am especially interested in the connection between reinforcement learning, embodied interaction, and interpretability: agents should not only complete tasks, but also expose reliable evidence about why they act.
@@ -70,6 +56,10 @@ My long-term goal is to develop RL-driven robotic systems whose behavior can be 
 ## Contact Focus
 
 I am open to research discussions and collaborations on RL-driven robot learning, interpretability for understanding foundation-model behavior, the synergy between reinforcement learning and foundation models, and RL for robot foundation models in embodied scenarios.
+
+## Professional Activities
+
+Conference Reviewer: AISTATS 2025, NeurIPS 2025, NeurIPS 2024.
 
 ## News Items
 

@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "PhD researcher in robot learning and interpretable reinforcement learning"
+    tagline: "PhD researcher in RL, interpretability, and foundation models for robot learning"
     # Site meta description for search engines and social sharing
-    description: "Wenhao Lu is a PhD researcher studying reinforcement learning for robotic manipulation and interpretability methods for RL agents."
+    description: "Wenhao Lu is a PhD researcher studying reinforcement learning, interpretability, and foundation models for robot learning and embodied agents."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "" # Twitter/X handle for Twitter Cards (without @)

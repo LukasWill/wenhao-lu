@@ -11,11 +11,13 @@ name:
 postnominals: []
 status:
   icon: ""
-role: PhD Researcher in Robot Learning and Interpretable Reinforcement Learning
+role: PhD Researcher in RL, Interpretability, and Foundation Models for Robot Learning
 bio: |
-  I am a PhD researcher in robot learning and AI. My work focuses on
-  reinforcement learning for robotic manipulation and on interpretability methods
-  that make RL agents easier to analyze, explain, and trust.
+  I am a PhD researcher working at the intersection of reinforcement learning,
+  interpretability, and foundation models for robot learning. My research
+  develops and analyzes RL-driven embodied agents, with a focus on robotic
+  manipulation, agent reliability, and explanations that make learned behavior
+  easier to inspect and trust.
 
 affiliations:
   - name: University of Hamburg
@@ -30,10 +32,9 @@ links:
     label: GitHub
 
 interests:
-  - Reinforcement learning for robotic manipulation
-  - Robot learning and embodied control
-  - Interpretability and explainability for RL agents
-  - Language models for RL-agent explanations
+  - Reinforcement learning for embodied and agentic decision-making systems
+  - Foundational models for embodied control
+  - Interpretability and explainability for RL agents and foundational models
 
 education:
   - degree: PhD Researcher

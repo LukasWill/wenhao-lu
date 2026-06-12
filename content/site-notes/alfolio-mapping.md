@@ -10,10 +10,10 @@ build:
 
 Use this note when porting the HugoBlox staging content back to the main al-folio site.
 
-- Hero/profile -> `_pages/about.md` and `_data/socials.yml`.
-- Research Themes -> a custom include or Markdown section on `_pages/about.md`.
+- Hero/profile/About Me -> `_pages/about.md` and `_data/socials.yml`.
 - Featured Publications -> `_bibliography/papers.bib`, ordered newest first on the homepage.
 - Selected Projects -> `_projects/*.md`.
+- Professional Activities -> `_pages/about.md` or `_data/cv.yml`.
 - News -> `_news/*.md`.
 - CV/Profile -> keep off the homepage unless a compact CV page is intentionally reintroduced.
 
