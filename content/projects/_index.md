@@ -2,6 +2,8 @@
 title: Projects
 date: 2026-05-28
 type: landing
+cascade:
+  share: false
 
 sections:
   - block: collection

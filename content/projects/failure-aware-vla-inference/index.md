@@ -48,3 +48,7 @@ Example future embed:
 - TODO: add paper or manuscript link when available.
 - TODO: add code link when available.
 - TODO: add demo videos and preliminary results.
+
+## References
+
+- TODO: add related papers, datasets, benchmarks, or model references.

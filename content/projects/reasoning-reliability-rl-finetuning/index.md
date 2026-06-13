@@ -43,3 +43,7 @@ Higher task reward does not automatically imply reliable reasoning. This project
 - TODO: add paper link.
 - TODO: add code link if public.
 - TODO: add dataset or evaluation link if public.
+
+## References
+
+- TODO: add related RL fine-tuning, RLVR/RLFT, reasoning reliability, and agent evaluation references.

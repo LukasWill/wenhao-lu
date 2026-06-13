@@ -30,3 +30,7 @@ An RL policy can achieve high return while remaining difficult to understand. Th
 
 - Causal State Distillation for Explainable Reinforcement Learning, CLeaR 2024.
 - Mental Modeling of Reinforcement Learning Agents by Language Models, TMLR 2025.
+
+## References
+
+- TODO: add related RL interpretability, causal explanation, and language-model probing references.

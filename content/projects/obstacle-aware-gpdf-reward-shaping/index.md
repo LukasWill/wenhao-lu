@@ -42,3 +42,7 @@ Obstacle-aware manipulation needs rewards and observations that expose task-rele
 - TODO: add paper link.
 - TODO: add code link if public.
 - TODO: add demo link if available.
+
+## References
+
+- TODO: add related obstacle-aware manipulation, reward shaping, and GPDF references.

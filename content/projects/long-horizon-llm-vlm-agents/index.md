@@ -42,3 +42,7 @@ Long-horizon agents must maintain coherent plans and grounded actions over many 
 - TODO: add paper link.
 - TODO: add code link if public.
 - TODO: add demo link if available.
+
+## References
+
+- TODO: add related long-horizon agent, planning, and evaluation references.

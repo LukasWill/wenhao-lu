@@ -29,3 +29,7 @@ Robotic manipulation requires agents to make sequential decisions under physical
 ## Related Work
 
 - A Closer Look at Reward Decomposition for High-Level Robotic Explanations, ICDL 2023.
+
+## References
+
+- TODO: add related robot learning, manipulation, and reinforcement learning references.

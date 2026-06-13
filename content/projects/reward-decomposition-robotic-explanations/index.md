@@ -29,3 +29,7 @@ Aggregate reward can hide why an RL policy chooses a particular behavior. Reward
 ## Related Publication
 
 - A Closer Look at Reward Decomposition for High-Level Robotic Explanations, ICDL 2023.
+
+## References
+
+- TODO: add related reward decomposition, explainable RL, and robotic explanation references.
