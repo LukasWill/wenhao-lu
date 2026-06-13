@@ -47,7 +47,7 @@ sections:
     id: projects
     content:
       title: Selected Projects
-      text: Three project threads that summarize my research trajectory.
+      text: Project threads that summarize my research trajectory.
       filters:
         folders:
           - projects

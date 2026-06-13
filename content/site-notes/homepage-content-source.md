@@ -31,6 +31,12 @@ I am a PhD researcher working at the intersection of reinforcement learning, int
 
 ## Selected Projects
 
+### Failure-Aware Fast Inference for VLA-Style Models
+
+Ongoing work on failure detection modules as general plug-in components toward faster, reliability-aware inference in VLA-style robot foundation models.
+
+Tags: robot foundation models, VLA, failure detection, efficient inference, embodied AI.
+
 ### RL-Driven Robotic Manipulation
 
 Reinforcement learning for robotic manipulation, including reward design, obstacle-aware behavior, and simulation-based evaluation.
