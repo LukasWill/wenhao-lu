@@ -53,12 +53,6 @@ Example future embed:
 </video>
 -->
 
-## Links
-
-- TODO: add paper or manuscript link when available.
-- TODO: add code link when available.
-- TODO: add demo videos and preliminary results.
-
 ## References
 
 - Qiao Gu et al. "SAFE: Multitask Failure Detection for Vision-Language-Action Models." *Advances in Neural Information Processing Systems (NeurIPS)*, 2025. [OpenReview](https://openreview.net/forum?id=XPyAukgsFf).

@@ -1,5 +1,5 @@
 ---
-title: "Presenting reward decomposition work at ICDL 2023"
+title: "Presenting XRL for robot work at ICDL 2023"
 date: 2023-09-12T12:59:00-04:00
 authors:
   - me
