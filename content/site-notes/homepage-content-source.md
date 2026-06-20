@@ -33,7 +33,7 @@ I am a PhD researcher working at the intersection of reinforcement learning, int
 
 ### Failure-Aware Fast Inference for VLA-Style Models
 
-Ongoing work on failure detection modules as general plug-in components toward faster, reliability-aware inference in VLA-style robot foundation models.
+Ongoing work on failure detection modules as general plug-ins for faster, safer VLA inference, with their potential use as efficient supervisory signals for VLA fine-tuning.
 
 Tags: robot foundation models, VLA, failure detection, efficient inference, embodied AI.
 
