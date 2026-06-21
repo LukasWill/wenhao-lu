@@ -1,0 +1,24 @@
+{{ $page := .page }}
+{{ $compact := .compact | default false }}
+{{ $icons := dict
+  "paper" "hero/document-text"
+  "preprint" "hero/document-text"
+  "source" "hero/link"
+  "code" "hero/code-bracket"
+}}
+
+{{ with $page.Params.paper_links }}
+  <div class="flex flex-wrap gap-2 {{ if $compact }}mt-3{{ else }}my-4{{ end }}">
+    {{ range . }}
+      {{ $icon := index $icons (.type | default "source") | default "hero/link" }}
+      <a
+        class="hb-attachment-link {{ if $compact }}hb-attachment-link-small{{ else }}hb-attachment-link-large{{ end }}"
+        href="{{ .url | safeURL }}"
+        target="_blank"
+        rel="noopener">
+        {{ partial "functions/get_icon" (dict "name" $icon "attributes" "style=\"height: 1em\" class='inline-block'") }}
+        <span>{{ .label }}</span>
+      </a>
+    {{ end }}
+  </div>
+{{ end }}

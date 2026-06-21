@@ -17,14 +17,17 @@ tags:
   - explainable RL
   - reward decomposition
   - robotics
-featured: true
+paper_links:
+  - type: preprint
+    url: https://arxiv.org/abs/2304.12958
+    label: arXiv
 image:
   preview_only: true
 ---
 
 **TL;DR:** This work combines reward decomposition with abstract action spaces to generate high-level explanations for reinforcement learning agents in robotic scenarios.
 
-Links: [arXiv](https://arxiv.org/abs/2304.12958), [DOI](https://doi.org/10.48550/arXiv.2304.12958).
+{{< publication_links >}}
 
 ## BibTeX
 

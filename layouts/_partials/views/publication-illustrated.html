@@ -45,9 +45,12 @@
     </h3>
 
     <div class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-      <span class="article-metadata li-cite-author">
-        {{ partial "page_metadata_authors" $item }}
-      </span>
+      {{ range $index, $raw := $item.Params.authors }}
+        {{ $slug := $raw | urlize }}
+        {{ $profile := partial "functions/get_author_profile" (dict "slug" $slug "title" $raw) }}
+        {{ $display := $profile.title | default $raw }}
+        {{ if gt $index 0 }}, {{ end }}<span>{{ $display }}</span>
+      {{ end }}
       <span aria-hidden="true"> · </span>
       <span>{{ $year }}</span>
       {{ with $publication.display_short }}
@@ -61,5 +64,7 @@
         {{ . }}
       </p>
     {{ end }}
+
+    {{ partial "publication_links" (dict "page" $item "compact" true) }}
   </div>
 </article>

@@ -17,14 +17,20 @@ tags:
   - robotics
   - task planning
   - neurorobotics
-featured: false
+paper_links:
+  - type: doi
+    url: https://doi.org/10.1007/978-3-031-72341-4_18
+    label: Paper
+  - type: preprint
+    url: https://arxiv.org/abs/2406.09988
+    label: arXiv
 image:
   preview_only: true
 ---
 
 **TL;DR:** This work studies object state-sensitive robot task planning with LLM/VLM-based agents and introduces a multimodal tabletop benchmark for evaluating state-aware planning.
 
-Links: [DOI](https://doi.org/10.1007/978-3-031-72341-4_18), [arXiv](https://arxiv.org/abs/2406.09988).
+{{< publication_links >}}
 
 ## BibTeX
 

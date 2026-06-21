@@ -2,6 +2,10 @@
 title: Publications
 cms_exclude: true
 
+cascade:
+  share: false
+  profile: false
+
 # View.
 view: publication-illustrated
 

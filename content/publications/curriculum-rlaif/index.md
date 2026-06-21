@@ -18,14 +18,20 @@ tags:
   - reinforcement learning
   - AI feedback
   - foundation models
-featured: false
+paper_links:
+  - type: preprint
+    url: https://arxiv.org/abs/2505.20075
+    label: arXiv
+  - type: code
+    url: https://github.com/ljy2222/Curriculum-RLAIF
+    label: Code
 image:
   preview_only: true
 ---
 
 **TL;DR:** Curriculum-RLAIF trains reward models with preference pairs ordered by difficulty, improving reward-model generalization and downstream policy alignment without adding inference cost.
 
-Links: [arXiv](https://arxiv.org/abs/2505.20075), [Code](https://github.com/ljy2222/Curriculum-RLAIF).
+{{< publication_links >}}
 
 ## BibTeX
 

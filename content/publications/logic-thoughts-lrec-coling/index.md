@@ -18,14 +18,17 @@ tags:
   - language models
   - reasoning
   - logic
-featured: false
+paper_links:
+  - type: source
+    url: https://aclanthology.org/2024.lrec-main.543/
+    label: ACL Anthology
 image:
   preview_only: true
 ---
 
 **TL;DR:** This work proposes Logical Thoughts, a prompting framework that uses symbolic-logic principles to verify and revise zero-shot chain-of-thought reasoning across multi-step tasks.
 
-Links: [ACL Anthology](https://aclanthology.org/2024.lrec-main.543/).
+{{< publication_links >}}
 
 ## BibTeX
 

@@ -18,14 +18,20 @@ tags:
   - explainable RL
   - causal analysis
   - reinforcement learning
-featured: true
+paper_links:
+  - type: source
+    url: https://proceedings.mlr.press/v236/lu24a.html
+    label: Proceedings
+  - type: preprint
+    url: https://arxiv.org/abs/2401.00104
+    label: arXiv
 image:
   preview_only: true
 ---
 
 **TL;DR:** This work extends reward decomposition with causal representation objectives to provide more informative local explanations for reinforcement learning agents.
 
-Links: [arXiv](https://arxiv.org/abs/2401.00104), [Proceedings](https://proceedings.mlr.press/v236/lu24a.html).
+{{< publication_links >}}
 
 ## BibTeX
 

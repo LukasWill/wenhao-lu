@@ -16,14 +16,20 @@ tags:
   - reinforcement learning
   - language models
   - interpretability
-featured: true
+paper_links:
+  - type: preprint
+    url: https://arxiv.org/abs/2406.18505
+    label: arXiv
+  - type: source
+    url: https://openreview.net/forum?id=JN7iNWaPTe
+    label: OpenReview
 image:
   preview_only: true
 ---
 
 **TL;DR:** This work studies whether language models can infer and reason about RL agents from observed interaction histories, using language-model mental modeling as a probe of learned agent behavior.
 
-Links: [arXiv](https://arxiv.org/abs/2406.18505), [OpenReview](https://openreview.net/forum?id=JN7iNWaPTe).
+{{< publication_links >}}
 
 ## BibTeX
 
