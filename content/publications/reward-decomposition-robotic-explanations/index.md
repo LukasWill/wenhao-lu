@@ -18,6 +18,8 @@ tags:
   - reward decomposition
   - robotics
 featured: true
+image:
+  preview_only: true
 ---
 
 **TL;DR:** This work combines reward decomposition with abstract action spaces to generate high-level explanations for reinforcement learning agents in robotic scenarios.

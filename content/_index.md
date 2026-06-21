@@ -40,7 +40,7 @@ sections:
       order: desc
       count: 20
     design:
-      view: citation
+      view: publication-illustrated
       columns: 1
 
   - block: collection

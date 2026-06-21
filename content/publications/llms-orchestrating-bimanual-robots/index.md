@@ -18,6 +18,8 @@ tags:
   - language models
   - bimanual robots
 featured: false
+image:
+  preview_only: true
 ---
 
 **TL;DR:** This work uses an LLM-based orchestration agent to reason over task configurations and coordinate long-horizon bimanual robot behavior in simulated humanoid manipulation tasks.

@@ -19,6 +19,8 @@ tags:
   - reasoning
   - logic
 featured: false
+image:
+  preview_only: true
 ---
 
 **TL;DR:** This work proposes Logical Thoughts, a prompting framework that uses symbolic-logic principles to verify and revise zero-shot chain-of-thought reasoning across multi-step tasks.

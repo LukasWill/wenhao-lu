@@ -18,6 +18,8 @@ tags:
   - task planning
   - neurorobotics
 featured: false
+image:
+  preview_only: true
 ---
 
 **TL;DR:** This work studies object state-sensitive robot task planning with LLM/VLM-based agents and introduces a multimodal tabletop benchmark for evaluating state-aware planning.

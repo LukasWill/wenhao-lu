@@ -17,6 +17,8 @@ tags:
   - language models
   - interpretability
 featured: true
+image:
+  preview_only: true
 ---
 
 **TL;DR:** This work studies whether language models can infer and reason about RL agents from observed interaction histories, using language-model mental modeling as a probe of learned agent behavior.

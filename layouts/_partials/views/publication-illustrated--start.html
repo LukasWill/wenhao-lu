@@ -1,0 +1,6 @@
+{{ $standalonePadding := "" }}
+{{ if not (reflect.IsMap .page) }}
+  {{ $standalonePadding = "px-6 xl:px-0" }}
+{{ end }}
+<div class="mt-12 sm:mt-16 container max-w-5xl w-full {{ $standalonePadding }}">
+  <div class="divide-y divide-zinc-200 dark:divide-zinc-800">

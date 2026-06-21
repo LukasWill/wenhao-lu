@@ -19,6 +19,8 @@ tags:
   - causal analysis
   - reinforcement learning
 featured: true
+image:
+  preview_only: true
 ---
 
 **TL;DR:** This work extends reward decomposition with causal representation objectives to provide more informative local explanations for reinforcement learning agents.

@@ -9,7 +9,7 @@ sections:
   - block: collection
     content:
       title: Selected Projects
-      text: Representative project areas in RL-driven robot learning and interpretability for RL agents.
+      text: Representative project areas in RL robot learning and interpretability for RL agents.
       filters:
         folders:
           - projects
