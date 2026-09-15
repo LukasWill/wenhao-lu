@@ -1,0 +1,23 @@
+{{ $content := .wcBlock.content }}
+
+<div class="portfolio-section portfolio-section--contact">
+  <section aria-labelledby="professional-service-heading">
+    <p class="portfolio-eyebrow">Community</p>
+    <h2 id="professional-service-heading">{{ $content.service_title }}</h2>
+    <p>{{ $content.service_text }}</p>
+  </section>
+
+  <section aria-labelledby="contact-heading">
+    <p class="portfolio-eyebrow">Next Step</p>
+    <h2 id="contact-heading">{{ $content.contact_title }}</h2>
+    <p>{{ $content.contact_text }}</p>
+    <div class="portfolio-contact-links">
+      {{ range $content.links }}
+        {{ $url := .url }}
+        {{ $scheme := (urls.Parse $url).Scheme }}
+        {{ $external := in (slice "http" "https") $scheme }}
+        <a href="{{ $url | safeURL }}" {{ if $external }}target="_blank" rel="noopener"{{ end }}>{{ .text }}</a>
+      {{ end }}
+    </div>
+  </section>
+</div>

@@ -1,9 +1,9 @@
 ---
-title: "Working on RL for robot learning and reliable agent behavior"
-date: 2026-05-28T09:00:00+02:00
+title: "Focusing on embodied intelligence for real-world robotics"
+date: 2026-08-13T09:00:00+02:00
 authors:
   - me
-summary: "Working on reinforcement learning for robot learning, robotic manipulation, and interpretable RL-agent behavior."
+summary: "I am focusing my next research chapter on robot foundation models that combine stronger embodied capabilities with interpretable, reliable behavior in real-world settings."
 ---
 
-Working on reinforcement learning for robot learning, robotic manipulation, and interpretable RL-agent behavior.
+I am focusing my next research chapter on robot foundation models that combine stronger embodied capabilities with interpretable, reliable behavior in real-world settings.

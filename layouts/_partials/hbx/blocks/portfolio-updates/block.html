@@ -1,0 +1,23 @@
+{{ $content := .wcBlock.content }}
+{{ $updates := where site.RegularPages "Type" "blog" }}
+{{ $updates = first ($content.count | default 3) (sort $updates "Date" "desc") }}
+
+<div class="portfolio-section portfolio-section--compact">
+  <header class="portfolio-section__header">
+    <p class="portfolio-eyebrow">Now</p>
+    <h2>{{ $content.title }}</h2>
+    {{ with $content.text }}<p>{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="portfolio-update-list">
+    {{ range $updates }}
+      <article>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+        <div>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </article>
+    {{ end }}
+  </div>
+</div>

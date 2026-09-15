@@ -12,6 +12,7 @@ publication:
   name: "Transactions on Machine Learning Research"
   short_name: "TMLR 2025"
 summary: "Language-model mental modeling for probing whether interaction histories support useful reasoning about reinforcement learning agents."
+featured: true
 tags:
   - reinforcement learning
   - language models

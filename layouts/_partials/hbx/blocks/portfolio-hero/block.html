@@ -1,0 +1,61 @@
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content }}
+{{ $profile := partial "functions/get_author_profile" "me" }}
+{{ $avatar := $profile.avatar }}
+
+<div class="portfolio-hero">
+  <div class="portfolio-hero__content">
+    {{ with $content.eyebrow }}<p class="portfolio-eyebrow">{{ . }}</p>{{ end }}
+    <h1>{{ $content.title | default $profile.title }}</h1>
+    {{ with $content.positioning }}<p class="portfolio-hero__positioning">{{ . }}</p>{{ end }}
+    {{ with $content.text }}
+      <div class="portfolio-hero__summary">{{ . | $page.RenderString }}</div>
+    {{ end }}
+
+    {{ with $content.actions }}
+      <div class="portfolio-actions" aria-label="Professional links">
+        {{ range . }}
+          {{ $url := .url }}
+          {{ $scheme := (urls.Parse $url).Scheme }}
+          {{ if and (not $scheme) (not (hasPrefix $url "#")) }}
+            {{ $url = $url | relLangURL }}
+          {{ end }}
+          {{ $external := in (slice "http" "https") $scheme }}
+          <a
+            class="portfolio-button portfolio-button--{{ .style | default "secondary" }}"
+            href="{{ $url | safeURL }}"
+            {{ if $external }}target="_blank" rel="noopener"{{ end }}>
+            {{ .text }}
+          </a>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ with $content.availability }}
+      <p class="portfolio-availability"><span aria-hidden="true"></span>{{ . }}</p>
+    {{ end }}
+  </div>
+
+  <div class="portfolio-hero__portrait">
+    {{ with $avatar }}
+      {{ $portrait := .Fill "720x720 Center" }}
+      <img
+        src="{{ $portrait.RelPermalink }}"
+        width="720"
+        height="720"
+        alt="{{ $content.image_alt | default $profile.title }}"
+        decoding="async"
+        fetchpriority="high">
+    {{ end }}
+    <div class="portfolio-hero__identity">
+      <strong>Knowledge Technology</strong>
+      <span>Department of Informatics · University of Hamburg</span>
+      {{ with $content.profile_url }}
+        <a href="{{ . | safeURL }}" target="_blank" rel="noopener">
+          {{ $content.profile_label | default "Institutional profile" }}
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</div>

@@ -1,24 +1,18 @@
 ---
 title: Projects
-date: 2026-05-28
-type: landing
+summary: Contribution-led research projects in reinforcement learning, robot learning, and agent interpretability.
+view: project-evidence
+sort_by: weight
+columns: 2
+fill_image: false
+show_date: false
+show_read_time: false
+show_read_more: false
 cascade:
   share: false
-
-sections:
-  - block: collection
-    content:
-      title: Selected Projects
-      text: Representative project areas in RL robot learning and interpretability for RL agents.
-      filters:
-        folders:
-          - projects
-        featured_only: true
-    design:
-      view: article-grid
-      fill_image: false
-      columns: 2
-      show_date: false
-      show_read_time: false
-      show_read_more: false
+  profile: false
+  show_date: false
+  reading_time: false
 ---
+
+Published research and ongoing technical directions, with public evidence and project status stated explicitly.

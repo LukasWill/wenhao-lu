@@ -13,6 +13,7 @@ publication:
   name: "23rd IEEE-RAS International Conference on Humanoid Robots"
   short_name: "Humanoids 2024"
 summary: "Large language models for orchestrating bimanual robots."
+featured: true
 tags:
   - robotics
   - language models

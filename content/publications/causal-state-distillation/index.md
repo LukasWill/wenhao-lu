@@ -14,6 +14,7 @@ publication:
   name: "3rd Conference on Causal Learning and Reasoning"
   short_name: "CLeaR 2024"
 summary: "Causal representation objectives for more informative local explanations of reinforcement learning agents."
+featured: true
 tags:
   - explainable RL
   - causal analysis

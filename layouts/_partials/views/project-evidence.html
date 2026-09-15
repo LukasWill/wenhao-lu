@@ -1,0 +1,30 @@
+{{ $item := .item }}
+<article class="portfolio-project-card">
+  <p class="portfolio-project-card__status">{{ $item.Params.project_status }}</p>
+  <h3><a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a></h3>
+  <p class="portfolio-project-card__summary">{{ $item.Params.summary }}</p>
+
+  {{ with $item.Params.project_contribution }}
+    <div class="portfolio-project-card__contribution">
+      <strong>Contribution</strong>
+      <p>{{ . }}</p>
+    </div>
+  {{ end }}
+
+  {{ with $item.Params.project_methods }}
+    <ul class="portfolio-method-list" aria-label="Methods">
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+  {{ end }}
+
+  <div class="portfolio-project-card__links">
+    {{ range $item.Params.project_links }}
+      {{ $url := .url }}
+      {{ $scheme := (urls.Parse $url).Scheme }}
+      {{ if and (not $scheme) (not (hasPrefix $url "#")) }}{{ $url = $url | relLangURL }}{{ end }}
+      {{ $external := in (slice "http" "https") $scheme }}
+      <a href="{{ $url | safeURL }}" {{ if $external }}target="_blank" rel="noopener"{{ end }}>{{ .label }}</a>
+    {{ end }}
+    <a href="{{ $item.RelPermalink }}">Project details <span aria-hidden="true">→</span></a>
+  </div>
+</article>

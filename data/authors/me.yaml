@@ -11,17 +11,15 @@ name:
 postnominals: []
 status:
   icon: ""
-role: PhD Researcher in RL, Interpretability, and Foundation Models for Robot Learning
+role: Research Associate & PhD Researcher in Reinforcement Learning
 bio: |
-  I am a PhD researcher working at the intersection of reinforcement learning,
-  interpretability, and foundation models for robot learning. My research
-  develops and analyzes RL-driven embodied agents, with a focus on robotic
-  manipulation, agent reliability, and explanations that make learned behavior
-  easier to inspect and trust.
+  I develop and analyze reinforcement-learning agents across robot learning and
+  agent interpretability, connecting causal explanations and trajectory-level
+  evaluation with ongoing work on reliable embodied systems.
 
 affiliations:
-  - name: University of Hamburg
-    url: https://www.uni-hamburg.de/
+  - name: Knowledge Technology, University of Hamburg
+    url: https://www.inf.uni-hamburg.de/en/inst/ab/wtm/people/lu.html
 
 links:
   - icon: at-symbol
@@ -30,69 +28,6 @@ links:
   - icon: brands/github
     url: https://github.com/LukasWill
     label: GitHub
-
-interests:
-  - Reinforcement learning for embodied and agentic decision-making systems
-  - Foundational models for embodied control
-  - Interpretability and explainability for RL agents and foundational models
-
-education:
-  - degree: PhD Researcher
-    institution: University of Hamburg
-    start: ''
-    end: ''
-    summary: |
-      Research focus: robot learning, reinforcement learning, robotic manipulation,
-      and interpretable RL-agent behavior.
-      Program dates, lab name, and supervisor details should be finalized before publication.
-
-experience:
-  - role: PhD Researcher
-    org: University of Hamburg
-    start: ''
-    end: ''
-    summary: |
-      Research on reinforcement learning for embodied and agentic decision-making
-      systems, with emphasis on robot learning, robotic manipulation, and
-      interpretable RL-agent behavior.
-
-skills:
-  - name: Reinforcement Learning
-    items:
-      - label: PPO
-        level: 4
-      - label: Reward shaping
-        level: 4
-      - label: Reward decomposition
-        level: 4
-      - label: Trajectory-level evaluation
-        level: 4
-  - name: Robot Learning
-    items:
-      - label: Robotic manipulation
-        level: 4
-      - label: Simulation-based learning
-        level: 4
-      - label: Obstacle-aware behavior
-        level: 4
-      - label: Embodied control
-        level: 4
-  - name: Interpretability
-    items:
-      - label: Language models for RL explanations
-        level: 3
-      - label: Mental modeling of RL agents
-        level: 4
-      - label: Causal state distillation
-        level: 4
-  - name: Engineering Tools
-    items:
-      - label: PyTorch
-        level: 4
-      - label: Robotics simulation
-        level: 4
-      - label: Experiment analysis
-        level: 4
 
 languages: []
 awards: []

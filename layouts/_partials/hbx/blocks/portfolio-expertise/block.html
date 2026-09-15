@@ -1,0 +1,20 @@
+{{ $content := .wcBlock.content }}
+
+<div class="portfolio-section portfolio-section--compact">
+  <header class="portfolio-section__header">
+    <p class="portfolio-eyebrow">Expertise</p>
+    <h2>{{ $content.title }}</h2>
+    {{ with $content.text }}<p>{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="portfolio-expertise-grid">
+    {{ range $content.groups }}
+      <section class="portfolio-expertise-group" aria-labelledby="expertise-{{ .label | urlize }}">
+        <h3 id="expertise-{{ .label | urlize }}">{{ .label }}</h3>
+        <ul>
+          {{ range .items }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      </section>
+    {{ end }}
+  </div>
+</div>

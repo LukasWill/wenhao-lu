@@ -1,12 +1,22 @@
 ---
 title: Reward Decomposition for Robotic Explanations
 date: 2026-05-28
-summary: High-level explanations for RL-driven robot behavior using reward decomposition and abstract action spaces.
+weight: 4
+summary: High-level explanations of RL-driven robot behavior using decomposed action values, abstract actions, and task-level object properties.
 tags:
   - explainable RL
   - reward decomposition
   - robotics
-featured: true
+featured: false
+project_status: Published research · ICDL 2023 oral
+project_contribution: Developed and evaluated an explanation layer combining decomposed action values with abstract actions and object-level task properties.
+project_methods:
+  - Reward decomposition
+  - Explainable Q-maps
+  - Robotic evaluation
+project_links:
+  - label: ICDL 2023 paper
+    url: publications/reward-decomposition-robotic-explanations/
 links: []
 image:
   caption: ""
@@ -14,22 +24,20 @@ image:
   preview_only: true
 ---
 
-This project studies how reward decomposition can make reinforcement learning policies more interpretable in robotic tasks. Instead of explaining low-level motor commands directly, the work uses task-relevant reward channels and abstract actions to produce higher-level explanations of agent behavior.
+**Status:** Publication-backed work presented orally at ICDL 2023.
 
-## Motivation
+## Problem
 
-Aggregate reward can hide why an RL policy chooses a particular behavior. Reward decomposition gives a more structured view of what the agent is trading off during interaction.
+A scalar return hides the trade-offs behind an action, while one-step explanations can miss consequences that unfold later in a trajectory. Low-level robotic state and action spaces make both problems difficult to communicate directly.
 
-## What I Worked On
+## Contribution
 
-- High-level explanations for RL-driven robot behavior.
-- Reward decomposition and abstract action spaces for explanation.
-- Evaluation of explanation quality in robotic scenarios.
+- An explainable Q-map framework that combines decomposed action values with abstract, task-specific actions.
+- Visual and textual explanations grounded in object properties and future reward components.
+- Quantitative and qualitative analysis in two robotic scenarios, including exploratory integration of explanation artifacts with language models.
 
-## Related Publication
+The contribution is the explanation layer. The robotic scenarios provide embodied evaluation settings; this work does not claim a new manipulation controller or obstacle-avoidance method.
 
-- A Closer Look at Reward Decomposition for High-Level Robotic Explanations, ICDL 2023.
+## Evidence
 
-## References
-
-- TODO: add related reward decomposition, explainable RL, and robotic explanation references.
+[A Closer Look at Reward Decomposition for High-Level Robotic Explanations]({{< relref "/publications/reward-decomposition-robotic-explanations" >}}), *IEEE International Conference on Development and Learning*, 2023.

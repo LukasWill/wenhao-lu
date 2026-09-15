@@ -19,9 +19,9 @@ hugoblox:
     # Schema.org type for structured data
     type: person # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: "PhD researcher in RL, interpretability, and foundation models for robot learning"
+    tagline: "Research associate and PhD researcher in reinforcement learning, robot learning, and agent interpretability"
     # Site meta description for search engines and social sharing
-    description: "Wenhao Lu is a PhD researcher studying reinforcement learning, interpretability, and foundation models for robot learning and embodied agents."
+    description: "Wenhao Lu develops and analyzes reinforcement-learning agents across robot learning, causal interpretability, and reliable embodied AI."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "" # Twitter/X handle for Twitter Cards (without @)
@@ -60,7 +60,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   typography:
     # Theme pack: name from data/fonts/
-    pack: "academic"
+    pack: "system"
 
   # ────────────────────────────────────────────────────────────────────────────
   # LAYOUT
@@ -116,10 +116,9 @@ hugoblox:
     # Copyright notice - supports {year}, {name}, {license} placeholders
     notice: "© {year} {name}. This work is licensed under {license}"
     license:
-      type: cc # cc | custom
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+      type: custom # cc | custom
+      label: "CC BY-NC-ND 4.0"
+      url: "https://creativecommons.org/licenses/by-nc-nd/4.0/"
 
   # ────────────────────────────────────────────────────────────────────────────
   # SEO
@@ -173,7 +172,10 @@ hugoblox:
   search:
     enable: true
     # Trending/suggested search terms
-    suggestions: []
+    suggestions:
+      - Reinforcement learning
+      - Robot learning
+      - Interpretability
     # Quick action shortcuts in search modal
     quick_actions: []
 
@@ -251,7 +253,7 @@ hugoblox:
     csp:
       policy: ""
       report_only: false
-    frame_options: allow # deny | sameorigin | allow - allow enables iframe embedding
+    frame_options: sameorigin # deny | sameorigin | allow
     permissions_policy: ""
 
   # ────────────────────────────────────────────────────────────────────────────

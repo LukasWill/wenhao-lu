@@ -1,0 +1,21 @@
+{{ $content := .wcBlock.content }}
+{{ $projects := where site.RegularPages "Type" "projects" }}
+{{ $projects = where $projects "Params.featured" true }}
+{{ $projects = sort $projects "Params.home_order" "asc" }}
+
+<div class="portfolio-section">
+  <header class="portfolio-section__header portfolio-section__header--with-link">
+    <div>
+      <p class="portfolio-eyebrow">Research & Engineering</p>
+      <h2>{{ $content.title }}</h2>
+      {{ with $content.text }}<p>{{ . }}</p>{{ end }}
+    </div>
+    <a class="portfolio-section-link" href="{{ $content.archive_url | relLangURL }}">{{ $content.archive_text }}</a>
+  </header>
+
+  <div class="portfolio-project-grid">
+    {{ range $projects }}
+      {{ partial "views/project-evidence" (dict "item" .) }}
+    {{ end }}
+  </div>
+</div>
