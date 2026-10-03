@@ -22,11 +22,11 @@ sections:
         - text: Explore research
           url: '#expertise'
           style: primary
-        - text: Publications
-          url: publications/
-          style: secondary
         - text: GitHub
           url: https://github.com/LukasWill
+          style: text
+        - text: Google Scholar
+          url: 'https://scholar.google.com/citations?user=YZt2J_YAAAAJ&hl=de&oi=ao'
           style: text
       image_alt: Wenhao Lu
     design:
@@ -62,7 +62,7 @@ sections:
     content:
       service_title: Professional Service
       service_text: >-
-        Conference reviewer for ICLR 2026; AAMAS, AISTATS, ICML, ICLR, and NeurIPS
+        Conference reviewer for ICLR 2026; AAMAS 2025; AISTATS, ICML, ICLR, and NeurIPS
         2025; and AISTATS and NeurIPS 2024.
       contact_title: Contact
       contact_text: >-

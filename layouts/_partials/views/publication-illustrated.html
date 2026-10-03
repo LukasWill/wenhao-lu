@@ -65,6 +65,7 @@
     </h3>
 
     <div class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+      {{ if .selected }}
       {{- range $index, $raw := $authors -}}
         {{ $slug := $raw | urlize }}
         {{ $profile := partial "functions/get_author_profile" (dict "slug" $slug "title" $raw) }}
@@ -73,6 +74,7 @@
       {{- end }}
       {{ if $abbreviated }}<span> et al.</span>{{ end }}
       <span aria-hidden="true"> · </span>
+      {{ end }}
       <span>{{ $year }}</span>
       {{ with $publication.display_short }}
         <span aria-hidden="true"> · </span>

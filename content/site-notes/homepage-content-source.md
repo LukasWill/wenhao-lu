@@ -43,7 +43,9 @@ Feature records through their `featured: true` front matter. Display every featu
 
 The mental-modeling paper links to `https://github.com/LukasWill/LLM-Xavier`; the directional VLM-reward paper links to `https://github.com/LukasWill/directional_vlm_rl`.
 
-In Selected Publications, show author names through Wenhao Lu and abbreviate subsequent names as "et al." The directional VLM-reward entry uses `home_author_first: true` to show "Wenhao Lu et al." Keep the complete author lists and citation order on publication pages and in BibTeX.
+In Selected Publications, show author names through Wenhao Lu and abbreviate subsequent names as "et al." The directional VLM-reward entry uses `home_author_first: true` to show "Wenhao Lu et al." Hide author names in the Publications archive; keep the complete author lists and citation order on individual publication pages and in BibTeX.
+
+The homepage hero links are Explore research, GitHub, and Google Scholar (`https://scholar.google.com/citations?user=YZt2J_YAAAAJ&hl=de&oi=ao`). There is no Publications button beside Explore research; the navigation and publication section still link to the archive.
 
 ## Project Archive
 
@@ -57,7 +59,7 @@ I welcome research-role and collaboration conversations in agent interpretabilit
 
 ## Professional Activities
 
-Conference Reviewer: ICLR 2026; AAMAS, AISTATS, ICML, ICLR, and NeurIPS 2025; AISTATS and NeurIPS 2024.
+Conference Reviewer: ICLR 2026; AAMAS 2025; AISTATS, ICML, ICLR, and NeurIPS 2025; AISTATS and NeurIPS 2024.
 
 ## News Items
 
@@ -71,7 +73,7 @@ The Selected Updates homepage block is temporarily commented out in `content/_in
 ## Open Factual Inputs
 
 - Confirm the formal PhD program, supervisor, and dates before adding them.
-- Add Google Scholar, LinkedIn, and ORCID only when verified public URLs are available.
+- Add LinkedIn and ORCID only when verified public URLs are available. Google Scholar was supplied by the user.
 - Add a CV only when a current, intentionally public file is supplied.
 
 ## Editorial Rules
