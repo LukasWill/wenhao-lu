@@ -3,18 +3,10 @@ title: Causal and Language-Based RL Interpretability
 date: 2026-05-28
 weight: 1
 home_order: 1
-summary: Causal representation objectives and language-model probes for explaining and predicting RL-agent behavior from trajectories.
-tags:
-  - RL interpretability
-  - causal analysis
-  - mental modeling
+summary: Causal explanations and language-model probes for understanding learned agent behavior.
 featured: true
-project_status: Published research · 2 first-author papers
-project_contribution: Developed causal state-distillation objectives and evaluated whether language models can form reliable behavioral models from agent interaction histories.
-project_methods:
-  - Causal representations
-  - Trajectory evaluation
-  - Language-model probing
+project_aim: Make learned decisions understandable and testable to support the evaluation of increasingly capable agents and their safety.
+project_delivery: Causal state distillation for RL explanations and language-model probes of agent behavior.
 project_links:
   - label: TMLR 2025
     url: publications/mental-modeling-rl-agents/
@@ -27,25 +19,12 @@ image:
   preview_only: true
 ---
 
-**Status:** Publication-backed research spanning two first-author papers.
+## Aim
 
-## Research Question
+Understand why an agent chooses an action and whether its future behavior can be predicted from experience. As models become more capable, explanations that can be tested against behavior are an important foundation for evaluating their reliability and safety.
 
-What evidence is sufficient to explain or predict an RL agent's decisions, and where do common explanation interfaces hide dependencies across state, action, reward, and trajectory history?
+## Delivered
 
-## My Contribution
+**Causal state distillation.** I developed causal representation objectives that connect states, actions, and reward channels, extending reward decomposition with compact factors for local explanations. [CLeaR 2024 paper (oral)]({{< relref "/publications/causal-state-distillation" >}}).
 
-**Causal state distillation.** I developed representation objectives that distill causal factors linking states to actions and reward channels. The method extends reward-decomposition explanations beyond sub-reward attribution and produces compact factors for local explanation.
-
-**Language-model mental modeling.** I studied whether language models can infer an RL agent's behavior and action effects from interaction histories. The evaluation uses explicit behavioral metrics to expose both useful predictions and systematic limitations rather than treating fluent rationales as evidence of understanding.
-
-## Methods
-
-- Causal representation learning with sufficiency, sparsity, and orthogonality objectives.
-- Reward-channel and action-factor analysis for local explanations.
-- Trajectory-level language-model probes for action and state-transition prediction.
-
-## Evidence
-
-- [Mental Modeling of Reinforcement Learning Agents by Language Models]({{< relref "/publications/mental-modeling-rl-agents" >}}), *Transactions on Machine Learning Research*, 2025.
-- [Causal State Distillation for Explainable Reinforcement Learning]({{< relref "/publications/causal-state-distillation" >}}), *Conference on Causal Learning and Reasoning*, 2024 (oral presentation).
+**Language-model mental modeling.** I evaluated whether language models can infer RL-agent behavior from interaction histories, using action and state-transition predictions to measure what the models understand and where they fail. [TMLR 2025 paper]({{< relref "/publications/mental-modeling-rl-agents" >}}) · [LLM-Xavier code](https://github.com/LukasWill/LLM-Xavier).

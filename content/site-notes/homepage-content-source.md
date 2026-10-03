@@ -12,60 +12,54 @@ Framework-neutral source content for this HugoBlox staging site and a possible f
 
 ## Positioning
 
-Wenhao Lu is a Research Associate and PhD researcher at the University of Hamburg. His work develops and analyzes reinforcement-learning agents across robot learning, causal interpretability, and reliable embodied AI.
+Wenhao Lu is a Research Associate and PhD researcher at the University of Hamburg. His work spans agent interpretability, LLM reasoning and RL post-training, and reliable robot learning.
 
-Homepage positioning: Reinforcement learning for capable, interpretable robot agents.
+Homepage positioning: Interpretable agents, stronger reasoning, reliable robots.
 
-Opportunity signal: Seeking robotics R&D roles in embodied intelligence, with a focus on VLA/world-action models and reinforcement learning for real-world robots.
+Opportunity signal: Open to research and R&D roles in interpretable AI, LLMs, and robotics.
 
 ## Research Focus
 
-- Core: reinforcement learning, robot learning, and agent interpretability.
-- Demonstrated methods: causal state distillation, reward decomposition, and trajectory-level evaluation.
-- Current directions: obstacle-aware manipulation, failure-aware VLA inference, and RL post-training.
+The homepage presents three research threads in this order:
+
+1. **Causal and Language-Based RL Interpretability.** Understand and evaluate learned decisions through causal state distillation and language-model probes of agent behavior, with reliability and safety as the motivation.
+2. **LLM Reasoning and RL Post-Training.** Improve reasoning and alignment through Curriculum-RLAIF and Logical Thoughts.
+3. **Robot Learning and VLA Failure Prediction.** Connect published directional VLM rewards for robot RL and LLM/VLM task planning with ongoing work on VLA failure prediction and obstacle-aware manipulation.
+
+Each card contains a title, an aim, delivered work, and evidence links. Do not repeat the summary, add method tags, or add a status banner. Describe ongoing experiments accurately in the detail pages.
+
+There is no separate Selected Work block or list of expertise tags. The portrait has no affiliation caption or institutional-profile link beneath it.
 
 ## Selected Publications
 
+Feature records through their `featured: true` front matter. Display every featured record in descending publication-date order:
+
 - Curriculum-RLAIF: Curriculum Alignment with Reinforcement Learning from AI Feedback, ACL Findings 2026.
+- Rewarding Change Beyond State: Directional VLM Rewards for Sample-Efficient Robot Reinforcement Learning, SII 2026.
 - Mental Modeling of Reinforcement Learning Agents by Language Models, TMLR 2025.
 - Large Language Models for Orchestrating Bimanual Robots, Humanoids 2024.
+- Enhancing Zero-Shot Chain-of-Thought Reasoning in Large Language Models through Logic, LREC-COLING 2024.
 - Causal State Distillation for Explainable Reinforcement Learning, CLeaR 2024.
 
-The Publications page remains the complete seven-item record.
-
-## Selected Projects
-
-### Failure-Aware Fast Inference for VLA-Style Models
-
-Ongoing work on failure detection modules as general plug-ins for faster, safer VLA inference, with their potential use as efficient supervisory signals for VLA fine-tuning.
-
-Tags: robot foundation models, VLA, failure detection, efficient inference, embodied AI.
-
-### RL for Obstacle-Aware Robotic Manipulation
-
-An ongoing research direction in reward and observation design for long-horizon, obstacle-aware robotic manipulation.
-
-Tags: robot learning, reinforcement learning, manipulation.
-
-### Causal and Language-Based RL Interpretability
-
-Analyses of RL agents using causal state distillation and language-model mental modeling to inspect learned behavior from trajectories.
-
-Tags: RL interpretability, causal analysis, mental modeling.
+The mental-modeling paper links to `https://github.com/LukasWill/LLM-Xavier`; the directional VLM-reward paper links to `https://github.com/LukasWill/directional_vlm_rl`.
 
 ## Project Archive
 
-The Projects page contains the three homepage threads plus the narrower publication-backed case study "Reward Decomposition for Robotic Explanations." This keeps the homepage selective without hiding concrete work.
+The Projects page contains the three homepage threads plus the narrower publication-backed case study "Reward Decomposition for Robotic Explanations."
+
+The former manipulation page remains available at its original URL and points to the merged robot-learning thread, but is hidden from listings. The unfinished reasoning-reliability project remains draft-only.
 
 ## Contact Focus
 
-I welcome research-role and collaboration conversations in reinforcement learning, interpretable learning systems, and robot foundation models, especially work that connects VLA-style policies with capable and reliable behavior in real-world robotics.
+I welcome research-role and collaboration conversations in agent interpretability, LLM reasoning and RL post-training, and robotics. The Contact block shows an "Email" mailto link and an "Institutional profile" link; do not display the email address verbatim.
 
 ## Professional Activities
 
-Conference Reviewer: ICLR 2026; AISTATS, ICML, ICLR, and NeurIPS 2025; AISTATS and NeurIPS 2024.
+Conference Reviewer: ICLR 2026; AAMAS, AISTATS, ICML, ICLR, and NeurIPS 2025; AISTATS and NeurIPS 2024.
 
 ## News Items
+
+The Selected Updates homepage block is temporarily commented out in `content/_index.md`; the update pages remain available.
 
 - 2026-08-13 - Focusing on robot foundation models that combine stronger embodied capabilities with interpretable, reliable behavior in real-world settings.
 - 2025-06-27 - Mental Modeling of Reinforcement Learning Agents by Language Models appeared in TMLR.
@@ -80,9 +74,8 @@ Conference Reviewer: ICLR 2026; AISTATS, ICML, ICLR, and NeurIPS 2025; AISTATS a
 
 ## Editorial Rules
 
-- Keep Home to three projects that communicate the research trajectory; use Projects as the complete four-project archive.
-- Keep project presentation text-first until genuinely informative visuals are available.
-- Label ongoing directions explicitly and add results only when they are public.
-- Use publication-backed case studies to document concrete contributions without presenting them as broader capabilities than the papers support.
-- Keep capability work in robot learning distinct from explanation work conducted in robotic environments.
+- Keep Home to three concise research threads; use Projects for the additional explanation case study.
+- Keep project presentation text-first until informative visuals are available.
+- Separate delivered methods from ongoing experiments and add results only when they are public.
+- Ground claims of expertise in the linked papers and project evidence.
 - Keep the reasoning-reliability project draft-only until its title, status, and public artifacts are confirmed.

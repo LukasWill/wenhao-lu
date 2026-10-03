@@ -24,6 +24,9 @@ paper_links:
   - type: source
     url: https://openreview.net/forum?id=JN7iNWaPTe
     label: OpenReview
+  - type: code
+    url: https://github.com/LukasWill/LLM-Xavier
+    label: Code
 image:
   preview_only: true
 ---

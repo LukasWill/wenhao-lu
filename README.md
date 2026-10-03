@@ -1,6 +1,6 @@
 # Wenhao Lu — Academic and Technical Portfolio
 
-Personal portfolio for Wenhao Lu, a Research Associate and PhD researcher at the University of Hamburg working across reinforcement learning, robot learning, and agent interpretability.
+Personal portfolio for Wenhao Lu, a Research Associate and PhD researcher at the University of Hamburg working across agent interpretability, LLM reasoning and RL post-training, and robot learning.
 
 The site is built with [Hugo](https://gohugo.io/) and [HugoBlox](https://hugoblox.com/). Content is stored as Markdown; local presentation overrides live under `layouts/` and `assets/css/`.
 
@@ -18,7 +18,9 @@ pnpm install
 pnpm run dev
 ```
 
-The configured GitHub Pages base path is `/hugo-academic-cv/`.
+The website is published at [lukaswill.github.io/wenhao-lu/](https://lukaswill.github.io/wenhao-lu/) from the `LukasWill/wenhao-lu` repository. The configured GitHub Pages base path is `/wenhao-lu/`.
+
+The separate website at `lukaswill.github.io/` is maintained in its own repository.
 
 ## Production build
 

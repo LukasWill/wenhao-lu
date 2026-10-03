@@ -3,17 +3,9 @@ title: Reward Decomposition for Robotic Explanations
 date: 2026-05-28
 weight: 4
 summary: High-level explanations of RL-driven robot behavior using decomposed action values, abstract actions, and task-level object properties.
-tags:
-  - explainable RL
-  - reward decomposition
-  - robotics
 featured: false
-project_status: Published research · ICDL 2023 oral
-project_contribution: Developed and evaluated an explanation layer combining decomposed action values with abstract actions and object-level task properties.
-project_methods:
-  - Reward decomposition
-  - Explainable Q-maps
-  - Robotic evaluation
+project_aim: Explain the reward trade-offs and future consequences behind a robot's actions.
+project_delivery: An explanation layer combining decomposed action values, abstract actions, and object-level task properties.
 project_links:
   - label: ICDL 2023 paper
     url: publications/reward-decomposition-robotic-explanations/
@@ -23,8 +15,6 @@ image:
   focal_point: ""
   preview_only: true
 ---
-
-**Status:** Publication-backed work presented orally at ICDL 2023.
 
 ## Problem
 

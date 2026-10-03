@@ -48,14 +48,5 @@
         decoding="async"
         fetchpriority="high">
     {{ end }}
-    <div class="portfolio-hero__identity">
-      <strong>Knowledge Technology</strong>
-      <span>Department of Informatics · University of Hamburg</span>
-      {{ with $content.profile_url }}
-        <a href="{{ . | safeURL }}" target="_blank" rel="noopener">
-          {{ $content.profile_label | default "Institutional profile" }}
-        </a>
-      {{ end }}
-    </div>
   </div>
 </div>

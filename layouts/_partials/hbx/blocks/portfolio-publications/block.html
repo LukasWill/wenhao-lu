@@ -1,12 +1,11 @@
 {{ $content := .wcBlock.content }}
 {{ $publications := where site.RegularPages "Type" "publications" }}
 {{ $publications = where $publications "Params.featured" true }}
-{{ $publications = first 4 (sort $publications "Date" "desc") }}
+{{ $publications = sort $publications "Date" "desc" }}
 
 <div class="portfolio-section">
   <header class="portfolio-section__header portfolio-section__header--with-link">
     <div>
-      <p class="portfolio-eyebrow">Peer-Reviewed Evidence</p>
       <h2>{{ $content.title }}</h2>
       {{ with $content.text }}<p>{{ . }}</p>{{ end }}
     </div>

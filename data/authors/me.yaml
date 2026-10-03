@@ -13,9 +13,9 @@ status:
   icon: ""
 role: Research Associate & PhD Researcher in Reinforcement Learning
 bio: |
-  I develop and analyze reinforcement-learning agents across robot learning and
-  agent interpretability, connecting causal explanations and trajectory-level
-  evaluation with ongoing work on reliable embodied systems.
+  I work on agent interpretability, LLM reasoning and RL post-training, and robot
+  learning. My research connects causal explanations and language-model evaluation
+  with methods for more capable, reliable agents.
 
 affiliations:
   - name: Knowledge Technology, University of Hamburg

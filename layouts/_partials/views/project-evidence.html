@@ -1,21 +1,24 @@
 {{ $item := .item }}
 <article class="portfolio-project-card">
-  <p class="portfolio-project-card__status">{{ $item.Params.project_status }}</p>
   <h3><a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a></h3>
-  <p class="portfolio-project-card__summary">{{ $item.Params.summary }}</p>
-
-  {{ with $item.Params.project_contribution }}
-    <div class="portfolio-project-card__contribution">
-      <strong>Contribution</strong>
-      <p>{{ . }}</p>
+  <dl class="portfolio-project-card__details">
+    <div>
+      <dt>Aim</dt>
+      <dd>{{ $item.Params.project_aim | default $item.Params.summary }}</dd>
     </div>
-  {{ end }}
-
-  {{ with $item.Params.project_methods }}
-    <ul class="portfolio-method-list" aria-label="Methods">
-      {{ range . }}<li>{{ . }}</li>{{ end }}
-    </ul>
-  {{ end }}
+    {{ with $item.Params.project_delivery | default $item.Params.project_contribution }}
+      <div>
+        <dt>Delivered</dt>
+        <dd>{{ . }}</dd>
+      </div>
+    {{ end }}
+    {{ with $item.Params.project_direction }}
+      <div>
+        <dt>In progress</dt>
+        <dd>{{ . }}</dd>
+      </div>
+    {{ end }}
+  </dl>
 
   <div class="portfolio-project-card__links">
     {{ range $item.Params.project_links }}

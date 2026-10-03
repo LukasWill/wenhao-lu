@@ -1,6 +1,6 @@
 ---
 title: Projects
-summary: Contribution-led research projects in reinforcement learning, robot learning, and agent interpretability.
+summary: Research in explainability, LLM reasoning, RL post-training, and robot learning.
 view: project-evidence
 sort_by: weight
 columns: 2
@@ -15,4 +15,4 @@ cascade:
   reading_time: false
 ---
 
-Published research and ongoing technical directions, with public evidence and project status stated explicitly.
+Methods, publications, and current work in understanding and improving learned agents.
