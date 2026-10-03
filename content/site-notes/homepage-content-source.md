@@ -43,6 +43,8 @@ Feature records through their `featured: true` front matter. Display every featu
 
 The mental-modeling paper links to `https://github.com/LukasWill/LLM-Xavier`; the directional VLM-reward paper links to `https://github.com/LukasWill/directional_vlm_rl`.
 
+In Selected Publications, show author names through Wenhao Lu and abbreviate subsequent names as "et al." The directional VLM-reward entry uses `home_author_first: true` to show "Wenhao Lu et al." Keep the complete author lists and citation order on publication pages and in BibTeX.
+
 ## Project Archive
 
 The Projects page contains the three homepage threads plus the narrower publication-backed case study "Reward Decomposition for Robotic Explanations."

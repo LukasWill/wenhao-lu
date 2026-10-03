@@ -14,7 +14,7 @@
 
   <div class="portfolio-publication-list divide-y divide-zinc-200 dark:divide-zinc-800">
     {{ range $publications }}
-      {{ partial "views/publication-illustrated" (dict "item" .) }}
+      {{ partial "views/publication-illustrated" (dict "item" . "selected" true) }}
     {{ end }}
   </div>
 </div>

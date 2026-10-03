@@ -4,6 +4,26 @@
 {{ $publication := partial "functions/resolve_publication.html" $item }}
 {{ $resource := partial "functions/get_featured_image.html" $item }}
 {{ $summary := partial "functions/get_summary" $item | plainify | htmlUnescape }}
+{{ $authors := $item.Params.authors }}
+{{ $abbreviated := false }}
+{{ if .selected }}
+  {{ if $item.Params.home_author_first }}
+    {{ $abbreviated = gt (len $authors) 1 }}
+    {{ $authors = slice "me" }}
+  {{ else }}
+    {{ $visibleAuthors := slice }}
+    {{ $ownerSeen := false }}
+    {{ range $authors }}
+      {{ if $ownerSeen }}
+        {{ $abbreviated = true }}
+      {{ else }}
+        {{ $visibleAuthors = $visibleAuthors | append . }}
+        {{ if eq . "me" }}{{ $ownerSeen = true }}{{ end }}
+      {{ end }}
+    {{ end }}
+    {{ $authors = $visibleAuthors }}
+  {{ end }}
+{{ end }}
 
 <article class="grid gap-5 py-7 first:pt-0 sm:grid-cols-[220px_minmax(0,1fr)] sm:items-start">
   <a
@@ -45,12 +65,13 @@
     </h3>
 
     <div class="mt-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-      {{- range $index, $raw := $item.Params.authors -}}
+      {{- range $index, $raw := $authors -}}
         {{ $slug := $raw | urlize }}
         {{ $profile := partial "functions/get_author_profile" (dict "slug" $slug "title" $raw) }}
         {{ $display := $profile.title | default $raw }}
         {{- if gt $index 0 -}}, {{ end }}{{ if eq $raw "me" }}<strong class="font-semibold text-zinc-800 dark:text-zinc-200">{{ $display }}</strong>{{ else }}<span>{{ $display }}</span>{{ end -}}
       {{- end }}
+      {{ if $abbreviated }}<span> et al.</span>{{ end }}
       <span aria-hidden="true"> · </span>
       <span>{{ $year }}</span>
       {{ with $publication.display_short }}

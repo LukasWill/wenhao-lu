@@ -18,6 +18,8 @@ content/publications/<publication-slug>/
 
 HugoBlox automatically selects an image whose filename contains `featured`. No image path needs to be added to the front matter.
 
+The directional VLM-reward thumbnail follows the same 1280×720 geometric template as the other papers. Its editable source is `thumbnail.svg`; export it to `featured.png` with CairoSVG. Keep the SVG source outside the `featured` naming pattern because the theme's image metadata requires a raster image.
+
 ## Replacing a Placeholder
 
 1. Prepare a 16:9 PNG, JPEG, or WebP image. A width of at least 1200 pixels is recommended.

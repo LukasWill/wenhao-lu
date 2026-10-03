@@ -14,6 +14,7 @@ publication:
   short_name: "SII 2026"
 summary: "Directional vision-language rewards improve exploration and sample efficiency in robot reinforcement learning."
 featured: true
+home_author_first: true
 tags:
   - reinforcement learning
   - vision-language models
