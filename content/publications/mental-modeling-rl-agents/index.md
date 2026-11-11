@@ -11,7 +11,7 @@ publishDate: "2025-06-27T00:00:00Z"
 publication:
   name: "Transactions on Machine Learning Research"
   short_name: "TMLR 2025"
-summary: "Language-model mental modeling for probing whether interaction histories support useful reasoning about reinforcement learning agents."
+summary: "Can a language model predict what an RL agent will do next from its past behaviour? We test this and show where current models fall short."
 featured: true
 tags:
   - reinforcement learning

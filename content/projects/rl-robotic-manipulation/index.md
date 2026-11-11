@@ -20,4 +20,4 @@ image:
 
 This work is now part of [Robot Learning and VLA Failure Prediction]({{< relref "/projects/failure-aware-vla-inference" >}}).
 
-I am developing reward and observation designs for long-horizon, obstacle-aware manipulation in simulation. Gaussian Process Distance Fields provide continuous obstacle-distance and gradient signals; evaluation separates task completion from collisions, path quality, and subgoal progress. Public results are forthcoming.
+I am developing reward and observation designs for long-horizon, obstacle-aware manipulation in simulation. Gaussian Process Distance Fields provide continuous obstacle-distance and gradient signals; evaluation separates task completion from collisions, path quality, and subgoal progress.

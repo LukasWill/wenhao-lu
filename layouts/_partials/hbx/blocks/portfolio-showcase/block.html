@@ -1,0 +1,32 @@
+{{/* Media-first case studies. Items come from the block's front matter in content/_index.md.
+     size: feature (full-width card) | compact (2-column grid). media: top | left | right.
+     A `video` path (relative to static/) is used only when the file exists; otherwise `image`
+     (relative to assets/) is shown. `metric` replaces the media with a headline number. */}}
+{{ $content := .wcBlock.content }}
+{{ $items := $content.items | default slice }}
+{{ $features := where $items "size" "feature" }}
+{{ $compact := where $items "size" "compact" }}
+
+<div class="portfolio-section">
+  <header class="portfolio-section__header portfolio-section__header--with-link">
+    <div>
+      {{ with $content.eyebrow }}<p class="portfolio-eyebrow">{{ . }}</p>{{ end }}
+      <h2>{{ $content.title }}</h2>
+      {{ with $content.text }}<p>{{ . }}</p>{{ end }}
+    </div>
+    {{ with $content.archive_url }}
+      <a class="portfolio-section-link" href="{{ . | relLangURL }}">{{ $content.archive_text | default "All projects" }}</a>
+    {{ end }}
+  </header>
+
+  <div class="showcase-features">
+    {{ range $features }}{{ partial "showcase/card" . }}{{ end }}
+  </div>
+
+  {{ with $compact }}
+    {{ with $content.compact_title }}<h3 class="showcase-subheading">{{ . }}</h3>{{ end }}
+    <div class="showcase-grid">
+      {{ range . }}{{ partial "showcase/card" . }}{{ end }}
+    </div>
+  {{ end }}
+</div>

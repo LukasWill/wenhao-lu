@@ -12,7 +12,7 @@ publishDate: "2024-11-01T00:00:00Z"
 publication:
   name: "23rd IEEE-RAS International Conference on Humanoid Robots"
   short_name: "Humanoids 2024"
-summary: "Large language models for orchestrating bimanual robots."
+summary: "An LLM plans and coordinates both arms of a humanoid robot through long tasks such as pouring water from one cup into another."
 featured: true
 tags:
   - robotics

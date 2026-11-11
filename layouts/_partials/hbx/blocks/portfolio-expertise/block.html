@@ -11,7 +11,7 @@
 
   <div class="portfolio-project-grid">
     {{ range $projects }}
-      {{ partial "views/project-evidence" (dict "item" .) }}
+      {{ partial "views/project-evidence" (dict "item" . "hide_links" true) }}
     {{ end }}
   </div>
 </div>

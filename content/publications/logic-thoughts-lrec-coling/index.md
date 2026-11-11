@@ -13,8 +13,8 @@ publishDate: "2024-05-01T00:00:00Z"
 publication:
   name: "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation"
   short_name: "LREC-COLING 2024"
-summary: "Logic-enhanced zero-shot chain-of-thought reasoning in large language models."
-featured: true
+summary: "Checks each step of a chain of thought with rules from logic and revises the steps that fail, with no extra training."
+featured: false
 tags:
   - language models
   - reasoning

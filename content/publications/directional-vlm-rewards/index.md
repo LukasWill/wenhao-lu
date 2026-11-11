@@ -12,7 +12,7 @@ publishDate: "2026-01-11T00:00:00Z"
 publication:
   name: "2026 IEEE/SICE International Symposium on System Integration"
   short_name: "SII 2026"
-summary: "Directional vision-language rewards improve exploration and sample efficiency in robot reinforcement learning."
+summary: "Rewarding a robot for visible progress toward the goal, not only for where it is, raises success on six Meta-World tasks from 63.8% to 78.2% at the same training budget."
 featured: true
 home_author_first: true
 tags:

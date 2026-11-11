@@ -13,7 +13,7 @@ publishDate: "2026-07-01T00:00:00Z"
 publication:
   name: "ACL Findings"
   short_name: "ACL Findings 2026"
-summary: "Difficulty-ordered preference training for more generalizable reward models and stronger downstream policy alignment."
+summary: "Training reward models on preference pairs ordered from easy to hard makes them generalise better and gives better-aligned policies, at no extra inference cost."
 featured: true
 tags:
   - reinforcement learning

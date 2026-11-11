@@ -1,6 +1,6 @@
 ---
 title: Projects
-summary: Research in explainability, LLM reasoning, RL post-training, and robot learning.
+summary: Robot learning, RL post-training for agents, and methods for checking what learned agents actually do.
 view: project-evidence
 sort_by: weight
 columns: 2
@@ -14,5 +14,3 @@ cascade:
   show_date: false
   reading_time: false
 ---
-
-Methods, publications, and current work in understanding and improving learned agents.

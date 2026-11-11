@@ -12,7 +12,7 @@ publishDate: "2023-11-01T00:00:00Z"
 publication:
   name: "IEEE International Conference on Development and Learning"
   short_name: "ICDL 2023"
-summary: "Reward decomposition and abstract actions for high-level explanations of reinforcement learning agents in robotic scenarios."
+summary: "Explains a robot's RL decisions by splitting its value estimates into separate reward goals over high-level actions, shown as maps and in text."
 tags:
   - explainable RL
   - reward decomposition

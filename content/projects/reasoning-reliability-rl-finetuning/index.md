@@ -1,63 +1,47 @@
 ---
-title: Reasoning Reliability under RL Fine-Tuning
-date: 2026-05-28
-summary: We study whether RL fine-tuning improves not only task success but also
-  the reliability of visible reasoning traces in multi-turn LLM/VLM agents. The
-  analysis separates aggregate reward-quality co-movement from within-checkpoint
-  trajectory-level coupling.
-tags:
-  - RLFT
-  - RLVR
-  - LLM agents
-  - VLM agents
-  - reasoning reliability
-  - interpretability
+title: "TraceRigor: Multi-Turn RLVR and Reasoning Reliability"
+date: 2026-11-01
+weight: 2
+summary: A multi-turn RL training and auditing stack for LLM/VLM agents, used to test whether agents that win more also reason better.
 featured: false
-draft: true
-build:
-  render: never
-  list: never
+project_aim: Find out whether RL from verifiable rewards improves an agent's reasoning or only its success rate.
+project_delivery: Multi-turn PPO/GRPO stack on veRL and Ray, a two-layer trace judge served via vLLM, nine environment integrations, and a NeurIPS 2026 workshop paper.
+project_links:
+  - label: Code
+    url: https://github.com/LukasWill/tracerigor
+  - label: Paper
+    url: publications/rlvr-agents-reasoning/
 links: []
 image:
-  caption: "TODO: add representative analysis figure."
+  caption: "Per-checkpoint task performance (grey) and rubric scores for five PPO-trained agents."
   focal_point: ""
   preview_only: true
-
 ---
 
-We study whether RL fine-tuning improves not only task success but also the reliability of visible reasoning traces in multi-turn LLM/VLM agents. The analysis separates aggregate reward-quality co-movement from within-checkpoint trajectory-level coupling.
+## The question
 
-## Motivation
+RL from verifiable rewards (RLVR) reliably raises task success. It does not follow that the visible reasoning gets better: a high-reward trajectory can describe a state that isn't there, take an action its own reasoning argues against, or ignore what the last turn revealed. TraceRigor treats trace reliability as a measured quantity next to reward.
 
-Higher task reward does not automatically imply reliable reasoning. This project asks when RL-based post-training improves visible reasoning traces and when success and reasoning quality decouple.
+![Evaluation framework: multi-turn RLVR produces trajectories; a two-layer judge scores each turn; analyses run across checkpoints, within checkpoints, and across turns.](tracerigor-overview.png)
 
-## What I Worked On
+## What I built
 
-- Evaluation of multi-turn LLM/VLM agents under RL fine-tuning.
-- Separation of aggregate reward-quality co-movement from trajectory-level coupling.
-- Reliability analysis for reasoning traces, action coherence, and long-horizon behavior.
+- **Multi-turn RLVR training.** Service-backed environments, a multi-turn rollout manager with turn-level loss and GAE masks, and PPO/GRPO with bi-level, turn-wise, and masked GAE for turn-level credit assignment. Training runs on a veRL fork ([verl-tracerigor](https://github.com/LukasWill/verl-tracerigor)) with asymmetric clipping (0.2 / 0.28) and dual-clip (3.0), orchestrated with Ray and 128 environments per step.
+- **A two-layer trace judge.** Deterministic checks (format, out-of-action-space, repetition, empty reasoning) settle the obvious failures before any LLM call. The remaining turns go to an LLM judge on any OpenAI-compatible endpoint, such as a self-hosted vLLM server, with JSON-schema guided decoding, rate limiting, retries, and audit logs.
+- **Ground truth for the judge.** Sokoban prompts carry simulator-derived spatial relations, and ScienceWorld has mechanical checks and trajectory replay. On 465 doubly annotated turns, judge labels agree with independent human labels at least 79% of the time in every modality and rubric.
+- **Nine environment integrations.** ALFWorld, ScienceWorld, Sokoban, AI2-THOR Navigation, ManiSkill PrimitiveSkill, BabyAI-Text, FrozenLake, Blackjack, and SVG reconstruction. The CPU path runs end to end in CI.
 
-## Representative Outputs
+## What we found
 
-- TODO: add official paper title.
-- TODO: verify public manuscript status before listing this as submitted, under review, or accepted.
+![Per-checkpoint mean rubric scores and task performance across training for five agents.](tracerigor-training.png)
 
-## Links
+1. **Across training, performance and reliability rise together.** ALFWorld success climbs from 8.6% to 85.2%, and SciWorld-3B reward from −8.0 to +60.5. Rubric scores also rise, but not monotonically. The weakest rubric depends on modality: temporal consistency for long-horizon text agents, observation grounding for visual agents.
+2. **Within a checkpoint, the winners are barely more reliable.** The length-controlled reliability gap between high- and low-performing trajectories is about 0.1 on a 0–1 scale. A randomly drawn high performer is more reliable than a low performer only 55–70% of the time.
+3. **Reliability decays over an episode, even in successful ones.** ALFWorld shows the strongest decline in temporal consistency (mean within-trajectory ρ = −0.27).
+4. **Agents act coherently on false beliefs.** Across 37,960 audited turns, 56.9% of Sokoban turns follow a false premise coherently, and 25.2% of ScienceWorld turns contain unsupported progress claims.
 
-- TODO: add paper link.
-- TODO: add code link if public.
-- TODO: add dataset or evaluation link if public.
+## Why it matters for post-training
 
-## Research Context
+Reward curves alone can't show whether a policy learned the right thing. TraceRigor measures it, and the same checker can turn its scores into process rewards that shape training.
 
-- [DeepSeek-R1](https://arxiv.org/abs/2501.12948) demonstrates how large-scale RL can elicit stronger reasoning behavior. This project asks the separate question of whether higher task reward is accompanied by more reliable visible reasoning.
-- [Scaling Laws for Reward Model Overoptimization](https://proceedings.mlr.press/v202/gao23h.html) shows that optimizing a proxy reward can eventually reduce performance under a stronger reference measure. It motivates separating reward trends from independent quality judgments.
-- [Language Models Don't Always Say What They Think](https://proceedings.neurips.cc/paper_files/paper/2023/hash/ed3fea9033a80fea1376299fa7863f4a-Abstract.html) demonstrates that plausible chains of thought can omit causal influences on an answer. This project extends the reliability question to multi-turn, RL-fine-tuned agent trajectories.
-- [Reasoning Models Don't Always Say What They Think](https://www.anthropic.com/research/reasoning-models-dont-say-think) studies chain-of-thought faithfulness in reasoning models, including after training against exploitable rewards. Our focus is checkpoint- and trajectory-level coupling between task reward and reasoning quality.
-
-## References
-
-- DeepSeek-AI et al. "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning." 2025. [arXiv](https://arxiv.org/abs/2501.12948).
-- Leo Gao, John Schulman, and Jacob Hilton. "Scaling Laws for Reward Model Overoptimization." *ICML*, 2023. [Proceedings](https://proceedings.mlr.press/v202/gao23h.html).
-- Miles Turpin, Julian Michael, Ethan Perez, and Samuel Bowman. "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting." *NeurIPS*, 2023. [Proceedings](https://proceedings.neurips.cc/paper_files/paper/2023/hash/ed3fea9033a80fea1376299fa7863f4a-Abstract.html).
-- Yanda Chen et al. "Reasoning Models Don't Always Say What They Think." 2025. [Research page](https://www.anthropic.com/research/reasoning-models-dont-say-think).
+[Paper]({{< relref "/publications/rlvr-agents-reasoning" >}}) · [Code](https://github.com/LukasWill/tracerigor)

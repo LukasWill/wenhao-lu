@@ -1,0 +1,13 @@
+{{/* Muted, looping video from static/. Renders nothing until the file exists. */}}
+{{ $src := .Get "src" }}
+{{ if and $src (fileExists (printf "static/%s" $src)) }}
+  {{ with .Get "title" }}<h2 id="{{ . | anchorize }}">{{ . }}</h2>{{ end }}
+  <figure class="portfolio-video not-prose">
+    <video
+      src="{{ $src | relURL }}"
+      {{ with .Get "poster" }}poster="{{ . | relURL }}"{{ end }}
+      autoplay muted loop playsinline preload="metadata"
+      aria-label="{{ .Get "caption" | default "Rollout video" }}"></video>
+    {{ with .Get "caption" }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+  </figure>
+{{ end }}

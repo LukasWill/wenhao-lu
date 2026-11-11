@@ -1,0 +1,26 @@
+{{/* Skills grouped by area, one row per group; each row links to the public work that evidences it. */}}
+{{ $content := .wcBlock.content }}
+
+<div class="portfolio-section portfolio-section--compact">
+  <header class="portfolio-section__header">
+    {{ with $content.eyebrow }}<p class="portfolio-eyebrow">{{ . }}</p>{{ end }}
+    <h2>{{ $content.title }}</h2>
+    {{ with $content.text }}<p>{{ . }}</p>{{ end }}
+  </header>
+
+  <dl class="toolbox-list">
+    {{ range $content.groups }}
+      <div class="toolbox-row">
+        <dt>{{ .title }}</dt>
+        <dd class="toolbox-row__items">
+          {{ range $i, $item := .items }}{{ if $i }} <span class="toolbox-row__sep" aria-hidden="true">·</span> {{ end }}<span>{{ $item }}</span>{{ end }}
+        </dd>
+        {{ with .evidence }}
+          <dd class="toolbox-row__evidence">
+            {{ range $i, $e := . }}{{ if $i }}<span aria-hidden="true">, </span>{{ end }}<a href="{{ partial "showcase/link-url" $e.url | safeURL }}">{{ $e.label }}</a>{{ end }}
+          </dd>
+        {{ end }}
+      </div>
+    {{ end }}
+  </dl>
+</div>

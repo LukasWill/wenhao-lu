@@ -1,0 +1,5 @@
+{{/* Resolve a site-relative or absolute URL for showcase links. */}}
+{{ $url := . }}
+{{ $scheme := (urls.Parse $url).Scheme }}
+{{ if and (not $scheme) (not (hasPrefix $url "#")) }}{{ $url = $url | relLangURL }}{{ end }}
+{{ return $url }}

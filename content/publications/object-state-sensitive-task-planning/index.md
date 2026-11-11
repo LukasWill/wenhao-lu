@@ -12,7 +12,7 @@ publishDate: "2024-09-01T00:00:00Z"
 publication:
   name: "Artificial Neural Networks and Machine Learning - ICANN 2024"
   short_name: "ICANN 2024"
-summary: "Object state-sensitive neurorobotic task planning."
+summary: "Robot task planners that notice object states, such as whether fruit is fresh or bitten, and a tabletop benchmark to test them."
 tags:
   - robotics
   - task planning

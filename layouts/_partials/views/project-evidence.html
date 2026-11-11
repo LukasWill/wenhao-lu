@@ -1,5 +1,14 @@
 {{ $item := .item }}
+{{ $resource := partial "functions/get_featured_image.html" $item }}
 <article class="portfolio-project-card">
+  {{ with $resource }}
+    {{ if reflect.IsImageResourceProcessable . }}
+      {{ $image := .Fit "960x540 webp" }}
+      <a class="portfolio-project-card__image" href="{{ $item.RelPermalink }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="" loading="lazy" decoding="async">
+      </a>
+    {{ end }}
+  {{ end }}
   <h3><a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a></h3>
   <dl class="portfolio-project-card__details">
     <div>
@@ -21,7 +30,7 @@
   </dl>
 
   <div class="portfolio-project-card__links">
-    {{ range $item.Params.project_links }}
+    {{ range (cond $.hide_links slice ($item.Params.project_links | default slice)) }}
       {{ $url := .url }}
       {{ $scheme := (urls.Parse $url).Scheme }}
       {{ if and (not $scheme) (not (hasPrefix $url "#")) }}{{ $url = $url | relLangURL }}{{ end }}

@@ -16,7 +16,19 @@ Wenhao Lu is a Research Associate and PhD researcher at the University of Hambur
 
 Homepage positioning: Interpretable agents, stronger reasoning, reliable robots.
 
-Opportunity signal: Open to research and R&D roles in interpretable AI, LLMs, and robotics.
+Opportunity signal: Open to research-engineer roles in RL post-training, VLAs and world models, and embodied AI.
+
+Homepage order: Hero → Selected Work (`portfolio-showcase`) → Research Focus → Selected Publications → Toolbox (`portfolio-toolbox`) → Contact. Homepage cards carry no kicker lines or tool tags; compact cards have no titles.
+
+## Selected Work
+
+Media-first case studies defined in the `portfolio-showcase` block of `content/_index.md`:
+
+1. **phone2panda** (feature card): iPhone recordings → sim-verified LIBERO data → ACT. Media (phone strip, generated-demo vs. ACT video) and numbers come from the phone2panda README.
+2. **TraceRigor** (feature card): multi-turn RLVR stack and reasoning-reliability findings (NeurIPS 2026 workshops). Figures are copied from `tracerigor/docs/assets/figures/`.
+3. Compact cards: directional VLM rewards (headline metric), NICOL bimanual orchestration, object-state planning, and X-QMap explanations. Collaboration figures carry a credit line.
+
+Every number on a card must appear in the linked paper, README, or code. Policy results for phone2panda are added only after the evaluation runs are final.
 
 ## Research Focus
 
@@ -59,7 +71,7 @@ I welcome research-role and collaboration conversations in agent interpretabilit
 
 ## Professional Activities
 
-Conference Reviewer: ICLR 2026; AAMAS 2025; AISTATS, ICML, ICLR, and NeurIPS 2025; AISTATS and NeurIPS 2024.
+Conference Reviewer: AAMAS, AISTATS, and ICLR 2027; ICLR 2026; AAMAS, AISTATS, ICML, ICLR, and NeurIPS 2025; AISTATS and NeurIPS 2024.
 
 ## News Items
 
@@ -78,8 +90,8 @@ The Selected Updates homepage block is temporarily commented out in `content/_in
 
 ## Editorial Rules
 
-- Keep Home to three concise research threads; use Projects for the additional explanation case study.
-- Keep project presentation text-first until informative visuals are available.
+- Lead Home with visual evidence (figures, rollout videos, headline metrics) from public code and papers.
+- Toolbox entries must be backed by a linked project or paper.
 - Separate delivered methods from ongoing experiments and add results only when they are public.
 - Ground claims of expertise in the linked papers and project evidence.
 - Keep the reasoning-reliability project draft-only until its title, status, and public artifacts are confirmed.

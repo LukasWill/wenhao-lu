@@ -1,0 +1,73 @@
+{{/* One showcase card; see blocks/portfolio-showcase for the item schema. */}}
+{{ $item := . }}
+{{ $primary := "" }}
+{{ with index ($item.links | default slice) 0 }}{{ $primary = partial "showcase/link-url" .url }}{{ end }}
+{{ $hasVideo := and $item.video (fileExists (printf "static/%s" $item.video)) }}
+{{ $image := "" }}
+{{ with $item.image }}{{ $image = resources.Get . }}{{ end }}
+<article class="showcase-card showcase-card--{{ $item.size | default "compact" }} showcase-card--media-{{ $item.media | default "top" }}">
+  <div class="showcase-card__media{{ if $item.metric }} showcase-card__media--metric{{ end }}{{ if $item.gallery }} showcase-card__media--gallery{{ end }}">
+    {{ if $item.gallery }}
+      {{/* Stacked media with captions: entries take `image` (assets/) or `video` (static/) + `poster`. */}}
+      {{ range $item.gallery }}
+        <figure class="showcase-gallery__item">
+          {{ $g := false }}{{ with .image }}{{ $g = resources.Get . }}{{ end }}
+          {{ $p := false }}{{ with .poster }}{{ $p = resources.Get . }}{{ end }}
+          {{ if and .video (fileExists (printf "static/%s" .video)) }}
+            <video src="{{ .video | relURL }}" {{ with $p }}poster="{{ (.Resize (printf "%dx webp" (math.Min .Width 1200 | int))).RelPermalink }}"{{ end }}
+              autoplay muted loop playsinline preload="metadata" aria-label="{{ .alt | default .caption }}"></video>
+          {{ else if $g }}
+            {{ $img := $g.Resize (printf "%dx webp" (math.Min $g.Width 1400 | int)) }}
+            <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}"
+              alt="{{ .alt | default .caption }}" loading="lazy" decoding="async">
+          {{ end }}
+          {{ with .caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}
+        </figure>
+      {{ end }}
+    {{ else if $item.metric }}
+      <p class="showcase-metric">
+        <span class="showcase-metric__value">{{ $item.metric.value }}</span>
+        <span class="showcase-metric__label">{{ $item.metric.label }}</span>
+        {{ with $item.metric.compare }}<span class="showcase-metric__compare">{{ . }}</span>{{ end }}
+      </p>
+    {{ else if $hasVideo }}
+      {{ $poster := "" }}
+      {{ with $image }}{{ $poster = (.Resize "1200x webp").RelPermalink }}{{ end }}
+      <video src="{{ $item.video | relURL }}" {{ with $poster }}poster="{{ . }}"{{ end }}
+        autoplay muted loop playsinline preload="metadata" aria-label="{{ $item.image_alt | default $item.title }}"></video>
+    {{ else if $image }}
+      {{ $img := $image }}
+      {{ if gt $image.Width 1400 }}{{ $img = $image.Resize "1400x webp" }}{{ else }}{{ $img = $image.Resize (printf "%dx webp" $image.Width) }}{{ end }}
+      <a href="{{ $primary }}" tabindex="-1">
+        <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}"
+          alt="{{ $item.image_alt | default $item.title }}" loading="lazy" decoding="async">
+      </a>
+    {{ end }}
+    {{ with $item.credit }}<p class="showcase-card__credit">{{ . | markdownify }}</p>{{ end }}
+  </div>
+
+  <div class="showcase-card__body">
+    {{ with $item.kicker }}<p class="showcase-card__kicker">{{ . }}</p>{{ end }}
+    {{ with $item.title }}<h3>{{ if $primary }}<a href="{{ $primary }}">{{ . }}</a>{{ else }}{{ . }}{{ end }}</h3>{{ end }}
+    {{ with $item.summary }}<p class="showcase-card__summary">{{ . | markdownify }}</p>{{ end }}
+    {{ with $item.points }}
+      <ul class="showcase-card__points">
+        {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+      </ul>
+    {{ end }}
+    {{ with $item.stack }}
+      <ul class="showcase-card__stack" aria-label="Tools used">
+        {{ range . }}<li>{{ . }}</li>{{ end }}
+      </ul>
+    {{ end }}
+    {{ with $item.links }}
+      <div class="showcase-card__links">
+        {{ range . }}
+          {{ $url := partial "showcase/link-url" .url }}
+          {{ $external := in (slice "http" "https") (urls.Parse .url).Scheme }}
+          <a href="{{ $url | safeURL }}" {{ if $external }}target="_blank" rel="noopener"{{ end }}>{{ .label }}{{ if $external }} <span aria-hidden="true">↗</span>{{ else }} <span aria-hidden="true">→</span>{{ end }}</a>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</article>

@@ -1,12 +1,12 @@
 ---
 title: LLM Reasoning and RL Post-Training
 date: 2026-07-01
-weight: 2
+weight: 4
 home_order: 2
 summary: Better language-model reasoning and alignment through curriculum-based AI feedback and logic-guided chain-of-thought refinement.
 featured: true
-project_aim: Improve LLM reasoning and alignment through RL post-training and explicit checks on reasoning steps.
-project_delivery: Curriculum-RLAIF for preference learning and Logical Thoughts for logic-guided chain-of-thought revision.
+project_aim: Make LLMs reason better, both by training them with RL from AI feedback and by checking their reasoning step by step.
+project_delivery: Curriculum-RLAIF (ACL Findings 2026), which trains reward models from easy to hard examples, and Logical Thoughts (LREC-COLING 2024), which checks chain-of-thought steps with logic.
 project_links:
   - label: Curriculum-RLAIF
     url: publications/curriculum-rlaif/
